@@ -1,0 +1,43 @@
+.Header {
+    background-color: #F3EEE1;
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+.logo{
+    width: max-content;
+    height: max-content;
+    margin-left: 3%;
+}
+.color1,.color2,.color3,.color4{
+    float: left;
+    width: 25%;
+    padding: 2%;
+    color: black;
+    text-align: center;
+}
+.paleta::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.paleta{
+    margin: 3%;
+}
+.color1 {
+    color: white;
+    background-color: #000000;
+}
+.color2 {
+    background-color: #F3EEE1;
+}
+.color3 {
+    background-color: #EC5E32;
+}
+.color4 {
+    background-color: #F3F1A2;
+}
+/*.paletaDeColores {
+    display: none;
+}
+*/

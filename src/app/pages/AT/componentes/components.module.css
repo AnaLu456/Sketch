@@ -1,0 +1,81 @@
+/* components.module.css */
+
+.Header {
+    background-color: #F3EEE1;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
+}
+
+.logo {
+    width: 30%;
+    height: fit-content;
+    margin-left: 3%;
+}
+
+.color1,
+.color2,
+.color3,
+.color4 {
+    float: left;
+    width: 25%;
+    padding: 2%;
+    color: black;
+    text-align: center;
+}
+
+.paleta::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.paleta {
+    margin: 3%;
+}
+
+.color1 {
+    color: white;
+    background-color: #000000;
+}
+
+.color2 {
+    background-color: #F3EEE1;
+}
+
+.color3 {
+    background-color: #EC5E32;
+}
+
+.color4 {
+    background-color: #F3F1A2;
+}
+
+.section {
+    height: 100vh;
+    background-image: url("../imágenes/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Añade posición relativa para que los elementos se superpongan correctamente */
+}
+
+.headerImageContainer {
+    position: relative;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.headerImage {
+    width: 100%;
+    height: auto;
+}
+
+.Imagecomponents {
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}

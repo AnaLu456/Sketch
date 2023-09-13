@@ -1,12 +1,22 @@
-import Image from "next/image";
 
+import Imagediv1 from "./Componentes/div1";
 import {Header,PaletaDeColores} from "./Componentes/header";
 
 export default function Home() {
   return (
     <div>
-      <PaletaDeColores></PaletaDeColores>
+    
       <Header></Header>
+      <Imagediv1></Imagediv1>
+
+
+
+
+
+
+
+
     </div>
+    
   );
 }

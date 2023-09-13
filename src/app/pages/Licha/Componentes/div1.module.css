@@ -1,0 +1,14 @@
+.imagendiv1{
+   height: 500px ;
+   width: auto;
+   margin-bottom: 10%;
+    object-fit: cover;
+    object-position: center;
+}
+.section {
+
+height: 60vh;
+background-image: url("../imagenes/26.jpg");
+background-position: center;
+background-size: cover;
+}

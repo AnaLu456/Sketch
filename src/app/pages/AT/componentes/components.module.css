@@ -96,7 +96,48 @@
 .BloquePrecios {
     background-color: #F3EEE1;
     width: 100%;
-    margin-top: 5px;
     margin-bottom: 8px;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra los objetos horizontalmente */
+    flex-direction: row; /* Coloca los objetos en línea horizontalmente */
+}
+
+.PreciosCuadro {
+    width: 190px; /* Ancho del rectángulo */
+    height: 82px; /* Altura del rectángulo */
+    border: 2px solid black; /* Borde de 2 píxeles de ancho y color negro */
+    background-color: transparent; /* Sin relleno (transparente) */
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    justify-content: space-evenly;
+}
+
+.Cantidades {
+    color: #000;
+    font-family: KoPub Batang;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TituloPrecios {
+    width: 30%;
+    height: fit-content;
+    margin-left: 3%;
+    color: #3D3B38;
+    font-family: Koulen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

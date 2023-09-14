@@ -26,7 +26,9 @@ function PaletaDeColores() {
 const Imagecomponents = () => {
     return (
         <div className={`${styles.section} ${styles.headerImageContainer}`}>
-            <Image src={img1} className={styles.Imagecomponents} />
+            <div className={styles.PrimerText}>
+                <h1>FOTOGRAFÍA</h1>
+            </div>
         </div>
     );
 }
@@ -34,7 +36,15 @@ const Imagecomponents = () => {
 function BloquePrecios() {
     return (
         <div className={styles.BloquePrecios}>
-            {/* Contenido de BloquePrecios */}
+             <div className={styles.PreciosCuadro}>
+                <div className={styles.Cantidades}>
+                    <h1>$110</h1>
+                    <h1>Q770</h1>
+                </div>
+            </div>
+            <div className={styles.TituloPrecios}>
+                <h1>SESIÓN DE FOTOS</h1>
+            </div>
         </div>
     );
 }

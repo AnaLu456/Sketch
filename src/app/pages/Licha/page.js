@@ -1,5 +1,5 @@
 
-import { Bloquep } from "../Licha/Componentes/div1";
+import { Bloquep, BloquePrecios } from "../Licha/Componentes/div1";
 import Imagediv1, { Textoimagen } from "./Componentes/div1";
 import {Header} from "./Componentes/header";
 
@@ -9,7 +9,7 @@ export default function Home() {
     
       <Header></Header>
       <Imagediv1></Imagediv1>
-      <Bloquep> </Bloquep>
+      <BloquePrecios></BloquePrecios>
     </div>
     
   );

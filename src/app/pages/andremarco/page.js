@@ -4,6 +4,7 @@ import img1 from "../../../../public/imagencarrusel1.jpg";
 import img2 from "../../../../public/imagencarrusel2.jpg";
 import img3 from "../../../../public/imagencarrusel3.jpg";
 import img4 from "../../../../public/imagencarrusel4.jpg";
+import Video from "../../exports/video.js";
 
 
 const imagenes = [
@@ -18,8 +19,10 @@ const imagenes = [
 ];
 
 
+
 export default function Home() {
   return (
+
     
     <main>
       <header className={styles.conocemas}>
@@ -36,6 +39,7 @@ export default function Home() {
 
         </div>
         <div className="video">
+          <Video></Video>
         </div>
 
         <div className="Nosotros">

@@ -1,11 +1,11 @@
 import styles from "./styles.module.css";
-import Carousel from "../../exports/carousel";
+import Carousel from "../../componentes/carousel";
 import img1 from "../../../../public/imagencarrusel1.jpg";
 import img2 from "../../../../public/imagencarrusel2.jpg";
 import img3 from "../../../../public/imagencarrusel3.jpg";
 import img4 from "../../../../public/imagencarrusel4.jpg";
-import Video from "../../exports/video.js";
-
+import Video from "../../componentes/video.js";
+import {Header} from "./../Mariana/componentes/componentes.js"
 
 const imagenes = [
 
@@ -24,28 +24,26 @@ export default function Home() {
   return (
 
 
-    <main>
-      <header className={styles.conocemas}>
-      </header>
+    <main className={styles.todo}>
+      <Header></Header>
 
-      <div className={styles.conocemas}>
-        *carrusel*
+      <div>
 
         <Carousel images={imagenes}></Carousel>
       </div>
-      <div className="carinteractivo">
-        carruselinteractivo
-        <carrusel></carrusel>
-
-      </div>
+      
+      
+      
       <div className="video">
+        
         <Video></Video>
+
       </div>
 
-      <div className="Nosotros">
-        <h1 className="nosotrostitulo">Nosotros</h1>
+      <div className={styles.nosotros}>
+        <h1 className={styles.nosotrostitulo}>Nosotros</h1>
         <div className="nosotrosinfo">
-          <p className="nosotrosparrafo">parrafo
+          <p className={styles.nosotrosparrafo}>Somos una empresa de marketing que tiene como mision impulsar el crecimiento y visibilidad de tu empresa mediante una gestion estrategica de redes, creacion de contenido digital de alta calidad y analisis de mercado.
           </p>
         </div>
       </div>

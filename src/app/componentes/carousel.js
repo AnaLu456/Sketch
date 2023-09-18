@@ -131,7 +131,7 @@ const Carousel = ({ images }) => {
             </svg>
           </motion.div>
         </div>
-      </div>
+      
       <div className={styles.dotspace}>
         {images.map((_, index) => (
           <motion.div
@@ -146,6 +146,7 @@ const Carousel = ({ images }) => {
         ))}
       </div>
     </div>
+  </div>
   );
 };
 export default Carousel;

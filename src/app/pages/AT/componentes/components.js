@@ -38,8 +38,8 @@ function BloquePrecios() {
         <div className={styles.BloquePrecios}>
              <div className={styles.PreciosCuadro}>
                 <div className={styles.Cantidades}>
-                    <h1>$110</h1>
-                    <h1>Q770</h1>
+                    <p className={styles.texto}>$110</p>
+                    <p className={styles.texto}>Q770</p>
                 </div>
             </div>
             <div className={styles.TituloPrecios}>
@@ -49,4 +49,31 @@ function BloquePrecios() {
     );
 }
 
-export { Header, Imagecomponents, BloquePrecios };
+const Imagecomponents2 = () => {
+    return (
+        <div className={`${styles.section2} ${styles.headerImageContainer2}`}>
+            <div className={styles.SegundoText}>
+                <h1>VIDEOGRAFÍA</h1>
+            </div>
+        </div>
+    );
+}
+
+function BloquePrecios2() {
+    return (
+        <div className={styles.BloquePrecios2}>
+             <div className={styles.PreciosCuadro2}>
+                <div className={styles.Cantidades2}>
+                    <p className={styles.texto}>1xQ350 - 1x$50</p>
+                    <p className={styles.texto}>2xQ600 - 2x$86</p>
+                    <p className={styles.texto}>4xQ2,000 - 4x$286</p>
+                </div>
+            </div>
+            <div className={styles.TituloPrecios2}>
+                <h1>VIDEO PACK</h1>
+            </div>
+        </div>
+    );
+}
+
+export { Header, Imagecomponents, BloquePrecios, Imagecomponents2, BloquePrecios2};

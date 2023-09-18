@@ -83,7 +83,7 @@
 .PrimerText {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Koulen;
+    font-family: 'Koulen';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -106,8 +106,8 @@
 }
 
 .PreciosCuadro {
-    width: 190px; /* Ancho del rectángulo */
-    height: 82px; /* Altura del rectángulo */
+    width: 100px; /* Ancho del rectángulo */
+    height: 80px; /* Altura del rectángulo */
     border: 2px solid black; /* Borde de 2 píxeles de ancho y color negro */
     background-color: transparent; /* Sin relleno (transparente) */
     display: flex; /* Utiliza flexbox */
@@ -119,7 +119,102 @@
 
 .Cantidades {
     color: #000;
-    font-family: KoPub Batang;
+    font-family: 'KoPub Batang';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cantidades .texto {
+    margin-bottom: 10px; /* Espacio vertical entre cada texto */
+}
+
+
+.TituloPrecios {
+    width: 30%;
+    height: fit-content;
+    margin-left: 3%;
+    color: #3D3B38;
+    font-family: 'Koulen';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section2 {
+    height: 100vh;
+    background-image: url("../imágenes/img2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Añade posición relativa para que los elementos se superpongan correctamente */
+}
+
+.Imagecomponents2 {
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.SegundoText {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Koulen';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Agrega relleno alrededor del texto */
+}
+
+.headerImageContainer2 {
+    position: relative;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.headerImage {
+    width: 100%;
+    height: auto;
+}
+
+.BloquePrecios2 {
+    background-color: #F3EEE1;
+    width: 100%;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra los objetos horizontalmente */
+    flex-direction: row; /* Coloca los objetos en línea horizontalmente */
+}
+
+.PreciosCuadro2 {
+    width: 335px; /* Ancho del rectángulo */
+    height: 120px; /* Altura del rectángulo */
+    border: 2px solid black; /* Borde de 2 píxeles de ancho y color negro */
+    background-color: transparent; /* Sin relleno (transparente) */
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    justify-content: space-evenly;
+}
+
+.Cantidades2 {
+    color: #000;
+    font-family: 'KoPub Batang';
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -130,12 +225,16 @@
     justify-content: center;
 }
 
-.TituloPrecios {
+.Cantidades2 .texto {
+    margin-bottom: 10px; /* Espacio vertical entre cada texto */
+}
+
+.TituloPrecios2 {
     width: 30%;
     height: fit-content;
     margin-left: 3%;
     color: #3D3B38;
-    font-family: Koulen;
+    font-family: 'Koulen';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

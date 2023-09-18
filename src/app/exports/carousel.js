@@ -1,10 +1,8 @@
-
-//use client
 "use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from './carousel.css';
+import styles from './carousel.module.css';
 
 const Carousel = ({ images }) => {
   console.log(images)
@@ -76,34 +74,42 @@ const Carousel = ({ images }) => {
     setCurrentIndex(index);
   };
 
+  const imageContainer = (
+    <div className={styles.carouselImg}>
+      <img src={images[currentIndex].src} alt="Image" />
+    </div>
+  );
+
+  const titleContainer = (
+    <div className={styles.titleContainer}>
+      <h1>{images[currentIndex].title}</h1>
+      <button>Saber Mas</button>
+    </div>
+  );
+
   return (
     <div className={styles.carouselImages}>
-        <div >
+
+      <div className={styles.carouselImg}>
         <AnimatePresence>
-          <motion.img
-            key={currentIndex}
-            src={images[currentIndex].src}
-            initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
-            animate="visible"
-            exit="exit"
-            variants={slideVariants}
-            className={styles.carouselImg}
-            width={80}
-            
-          />
+          {imageContainer}
+          <div className={styles.titleContainer}>
+            <h1 >{images[currentIndex].title}</h1>
+            <button>Click Me</button>
+          </div>
         </AnimatePresence>
         <div className={styles.slidedirection}>
           <motion.div
             variants={slidersVariants}
             whileHover="hover"
-            className="left"
+            className={styles.left}
             onClick={handlePrevious}
           >
-            <svg
+            <svg className={styles.flechaizsvg}
               xmlns="http://www.w3.org/2000/svg"
-              height="20"
+              height="15"
               viewBox="0 96 960 960"
-              width="20"
+              width="15"
             >
               <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
             </svg>
@@ -111,26 +117,26 @@ const Carousel = ({ images }) => {
           <motion.div
             variants={slidersVariants}
             whileHover="hover"
-            className="right"
+            className={styles.right}
             onClick={handleNext}
           >
-            <svg
+            <svg className={styles.flechasvg}
               xmlns="http://www.w3.org/2000/svg"
-              height="20"
+              height="15"
               viewBox="0 96 960 960"
-              width="20"
-              
+              width="15"
+
             >
               <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
             </svg>
           </motion.div>
         </div>
       </div>
-      <div className="carousel-indicator">
+      <div className={styles.dotspace}>
         {images.map((_, index) => (
           <motion.div
             key={index}
-            className={`dot ${currentIndex === index ? "active" : ""}`}
+            className={`${styles.dot} ${currentIndex === index ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
             initial="initial"
             animate={currentIndex === index ? "animate" : ""}

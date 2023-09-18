@@ -89,14 +89,14 @@ const Carousel = ({ images }) => {
 
   return (
     <div className={styles.carouselImages}>
-      
-        <div className={styles.carouselImg}>
+
+      <div className={styles.carouselImg}>
         <AnimatePresence>
           {imageContainer}
           <div className={styles.titleContainer}>
-        <h1>{images[currentIndex].title}</h1>
-        <button>Click Me</button>
-        </div>
+            <h1 key={currentIndex}>{images[currentIndex].title}</h1>
+            <button>Click Me</button>
+          </div>
         </AnimatePresence>
         <div className={styles.slidedirection}>
           <motion.div
@@ -125,7 +125,7 @@ const Carousel = ({ images }) => {
               height="20"
               viewBox="0 96 960 960"
               width="20"
-              
+
             >
               <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
             </svg>

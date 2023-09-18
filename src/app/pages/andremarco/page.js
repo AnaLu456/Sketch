@@ -8,11 +8,11 @@ import Video from "../../exports/video.js";
 
 
 const imagenes = [
-  
+
   img1,
-  
+
   img2,
-  
+
   img3,
 
   img4,
@@ -23,56 +23,56 @@ const imagenes = [
 export default function Home() {
   return (
 
-    
+
     <main>
       <header className={styles.conocemas}>
       </header>
 
-        <div className={styles.conocemas}>
+      <div className={styles.conocemas}>
         *carrusel*
-          
-          <Carousel images={imagenes}></Carousel>
-        </div>
-        <div className="carinteractivo">
-          carruselinteractivo
+
+        <Carousel images={imagenes}></Carousel>
+      </div>
+      <div className="carinteractivo">
+        carruselinteractivo
         <carrusel></carrusel>
 
-        </div>
-        <div className="video">
-          <Video></Video>
-        </div>
+      </div>
+      <div className="video">
+        <Video></Video>
+      </div>
 
-        <div className="Nosotros">
-            <h1 className="nosotrostitulo">Nosotros</h1>
-            <div className="nosotrosinfo">
-            <p className="nosotrosparrafo">parrafo
-            </p>
-            </div>
+      <div className="Nosotros">
+        <h1 className="nosotrostitulo">Nosotros</h1>
+        <div className="nosotrosinfo">
+          <p className="nosotrosparrafo">parrafo
+          </p>
         </div>
-        <div className="paquetes">
+      </div>
+      <div className="paquetes">
 
-          <div className="personalaccount">
-            <div className="moreinfo">
+        <div className="personalaccount">
+          <div className="moreinfo">
             <button className="moreinfo_button"></button>
-            </div>
           </div>
+        </div>
 
-          <div className="companyaccount">
-            <div className="companymoreinfo">
+        <div className="companyaccount">
+          <div className="companymoreinfo">
             <button className="companymoreinfobutton"></button>
-            </div>
           </div>
+        </div>
 
-          <div className="outsidecombo">
-            <div className="outsidemoreinfo">
+        <div className="outsidecombo">
+          <div className="outsidemoreinfo">
             <button className="outsidemoreinfobutton"></button>
-            </div>
           </div>
         </div>
-        <div className="contactus" >
+      </div>
+      <div className="contactus" >
 
-        </div>
+      </div>
     </main>
-    
+
   );
 }

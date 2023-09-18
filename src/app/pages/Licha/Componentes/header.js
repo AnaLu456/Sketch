@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from 'react';
-import styles from './componentes.module.css';
+import styles from '../Componentes/header.module.css';
 import Image from 'next/image';
-import img1 from '../imagenes/image3.png'
+import img1 from '../imagenes/Wave.png'
 
 function Header() {
     return (

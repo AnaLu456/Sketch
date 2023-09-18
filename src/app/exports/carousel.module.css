@@ -1,3 +1,7 @@
+main {
+  background-color: #F4EEE0;
+}
+
 .carouselImages {
     display: flex;
     flex-direction: column;

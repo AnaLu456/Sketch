@@ -1,4 +1,4 @@
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 import Carousel from "../../exports/carousel";
 import img1 from "../../../../public/imagencarrusel1.jpg";
 import img2 from "../../../../public/imagencarrusel2.jpg";
@@ -6,21 +6,34 @@ import img3 from "../../../../public/imagencarrusel3.jpg";
 import img4 from "../../../../public/imagencarrusel4.jpg";
 
 
-  const imagenes=[
-  img1,img2,img3,img4
-]
+const imagenes = [
+  
+  img1,
+  
+  img2,
+  
+  img3,
+
+  img4,
+];
+
 
 export default function Home() {
   return (
     
     <main>
-      <header className="encabezado">
+      <header className={styles.conocemas}>
       </header>
 
-        <div className={styles.Carousel}>
+        <div className={styles.conocemas}>
         *carrusel*
-          <h1>Impulsa tu crecimiento</h1>
+          
           <Carousel images={imagenes}></Carousel>
+        </div>
+        <div className="carinteractivo">
+          carruselinteractivo
+        <carrusel></carrusel>
+
         </div>
         <div className="video">
         </div>

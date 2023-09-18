@@ -1,13 +1,16 @@
-.carouselImages {
-    display: flex;
-    flex-direction: column;
-  }
-  .carouselImg {
-    width: 300px;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+  .carouselImages {
     height: 300px;
+  }
+  .carouselImg img {
+    max-width: 300px;
+    height: 200px;
     border-radius: 8px;
     border: #ff00008e solid 2px;
-  
+
+
+
   }
   .slidedirection {
     display: flex;
@@ -20,7 +23,7 @@
     padding: 10px 8px 8px 13px;
     margin: 0 20px;
     border-radius: 50%;
-    position: absolute;
+    
     top: 0;
     bottom: 0;
     margin: auto 10px;
@@ -33,6 +36,8 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
+    display: flex;
+    justify-content: space-between;    
   }
   .active {
     background-color: #fa2020;
@@ -45,12 +50,9 @@
     
   }
   
-  .apptittle{
-    display:  flex;
-    justify-content: space-around;
-    background-color: aqua;
-    margin: 10px;
-  }
-  .main{
-    background-color: black;
+  .dotspace{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
   }

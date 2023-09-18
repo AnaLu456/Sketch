@@ -1,10 +1,8 @@
-
-//use client
 "use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from './carousel.css';
+import styles from './carousel.module.css';
 
 const Carousel = ({ images }) => {
   console.log(images)
@@ -76,27 +74,35 @@ const Carousel = ({ images }) => {
     setCurrentIndex(index);
   };
 
+  const imageContainer = (
+    <div className={styles.carouselImg}>
+      <img src={images[currentIndex].src} alt="Image" />
+    </div>
+  );
+
+  const titleContainer = (
+    <div className={styles.titleContainer}>
+      <h1>{images[currentIndex].title}</h1>
+      <button>Saber Mas</button>
+    </div>
+  );
+
   return (
     <div className={styles.carouselImages}>
-        <div >
+      
+        <div className={styles.carouselImg}>
         <AnimatePresence>
-          <motion.img
-            key={currentIndex}
-            src={images[currentIndex].src}
-            initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
-            animate="visible"
-            exit="exit"
-            variants={slideVariants}
-            className={styles.carouselImg}
-            width={80}
-            
-          />
+          {imageContainer}
+          <div className={styles.titleContainer}>
+        <h1>{images[currentIndex].title}</h1>
+        <button>Click Me</button>
+        </div>
         </AnimatePresence>
         <div className={styles.slidedirection}>
           <motion.div
             variants={slidersVariants}
             whileHover="hover"
-            className="left"
+            className={styles.left}
             onClick={handlePrevious}
           >
             <svg
@@ -111,7 +117,7 @@ const Carousel = ({ images }) => {
           <motion.div
             variants={slidersVariants}
             whileHover="hover"
-            className="right"
+            className={styles.right}
             onClick={handleNext}
           >
             <svg
@@ -126,11 +132,11 @@ const Carousel = ({ images }) => {
           </motion.div>
         </div>
       </div>
-      <div className="carousel-indicator">
+      <div className={styles.dotspace}>
         {images.map((_, index) => (
           <motion.div
             key={index}
-            className={`dot ${currentIndex === index ? "active" : ""}`}
+            className={`${styles.dot} ${currentIndex === index ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
             initial="initial"
             animate={currentIndex === index ? "animate" : ""}

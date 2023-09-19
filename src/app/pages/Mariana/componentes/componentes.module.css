@@ -1,0 +1,97 @@
+
+.Header {
+    background-color: #F3EEE1;
+    height: 100%;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.55);
+    position: sticky;
+}
+.logo{
+    width: 40%;
+    height: fit-content;
+    margin-left: 3%;
+}
+.color1,.color2,.color3,.color4{
+    float: left;
+    width: 25%;
+    padding: 2%;
+    color: black;
+    text-align: center;
+}
+.paleta::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.paleta{
+    margin: 3%;
+}
+.color1 {
+    color: white;
+    background-color: #000000;
+}
+.color2 {
+    background-color: #F3EEE1;
+}
+.color3 {
+    background-color: #EC5E32;
+}
+.color4 {
+    background-color: #F3F1A2;
+}
+
+.fila{
+    grid-template-columns: auto auto;
+    margin-bottom: 7px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.30);
+}
+.container{
+    position: relative;
+    background-color:#F3EEE1;
+    padding-bottom: 20%;
+}
+.img{
+    width: 100%;
+    height: max-content;
+}
+.titulo,.texto{
+    position: absolute;
+    color: #ffffff;
+}
+.titulo{
+    top: 18%;
+    left: 2%;
+    font-size: 100%;
+}
+.texto{
+    top: 22%;
+    left: 64%;
+    right: 2%;
+    font-size: 80%;
+}
+
+.precio,.paquete{
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.precio{
+    background-color: #F3EEE1;
+    border: 2px solid #000000;
+    font-size: 80%;
+}
+.paquete{
+    font-size: 150%;
+}
+.botones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+}

@@ -94,7 +94,7 @@ const Carousel = ({ images }) => {
         <AnimatePresence>
           {imageContainer}
           <div className={styles.titleContainer}>
-            <h1 key={currentIndex}>{images[currentIndex].title}</h1>
+            <h1 >{images[currentIndex].title}</h1>
             <button>Click Me</button>
           </div>
         </AnimatePresence>
@@ -105,11 +105,11 @@ const Carousel = ({ images }) => {
             className={styles.left}
             onClick={handlePrevious}
           >
-            <svg
+            <svg className={styles.flechaizsvg}
               xmlns="http://www.w3.org/2000/svg"
-              height="20"
+              height="15"
               viewBox="0 96 960 960"
-              width="20"
+              width="15"
             >
               <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
             </svg>
@@ -120,11 +120,11 @@ const Carousel = ({ images }) => {
             className={styles.right}
             onClick={handleNext}
           >
-            <svg
+            <svg className={styles.flechasvg}
               xmlns="http://www.w3.org/2000/svg"
-              height="20"
+              height="15"
               viewBox="0 96 960 960"
-              width="20"
+              width="15"
 
             >
               <path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />

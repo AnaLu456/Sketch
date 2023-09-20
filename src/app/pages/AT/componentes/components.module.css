@@ -414,7 +414,7 @@
 .BloquePrecios4 {
     background-color: #F3EEE1;
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 50px;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
     padding: 50px;
     display: flex;
@@ -465,4 +465,121 @@
     line-height: normal;
 }
   
- 
+.Container {
+    float: left;
+    width: 45%; /* Adjust width as needed */
+    padding: 0px;
+    background-color: #F3EEE1;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
+    font-family: 'century gothic';
+  }
+  
+  .Button {
+    background-color: #C74441;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .Button:hover {
+    background-color: #E7CA4C;
+  }
+  
+  .Contacto {
+    color: #000000;
+    font-size: 35px;
+  }
+  
+  .Main {
+    margin: 20px;
+  }
+  
+  .Sections {
+    margin-bottom: 20px;
+  }
+  
+  /* Logo and Social Media Icons */
+  .Logo {
+    width: 150px;
+    height: 85px;
+    margin-left: 160px;
+    margin-top: 50px;
+  }
+
+  .LogoImg {
+    width: 120%;
+    height: fit-content;
+  }
+  
+  .RedesSociales {
+    display: flex;
+    align-items: center;
+  }
+  
+  .RedesSociales p {
+    margin-right: 10px;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  .TwImg {
+    width: 6%;
+    height: 6%;
+    justify-content: left;
+  }
+
+  .BotonTwLinkIcono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .BotonYtLinkIcono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .BotonInstaLinkIcono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .BotonFbLinkIcono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  /* Contact Form */
+  .Form {
+    margin-top: 0px;
+  }
+  
+  /* Additional Styles */
+  .body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'csentury gothic';
+    margin-top: 0px;
+  }
+  
+  .P {
+    color: #000000;
+    line-height: 0px;
+  }
+  

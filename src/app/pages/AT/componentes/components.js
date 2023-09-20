@@ -3,6 +3,10 @@ import styles from './components.module.css';
 import Image from 'next/image';
 import Wave from '../imágenes/Wave.png';
 import img1 from '../imágenes/img1.jpg';
+import Tw from '../imágenes/Tw.png';
+import Yt from '../imágenes/Yt.png';
+import Insta from '../imágenes/Insta.png';
+import Fb from '../imágenes/Fb.png';
 
 function Header() {
     return (
@@ -138,45 +142,53 @@ function ContactPage() {
     return (
         <div className={styles.Container}>
             <div className={styles.LeftSide}>
-                <main>
+                <main className={styles.Main}>
                     <div className={styles.Logo} paginaweb={styles.Logo}>
-                        <img className={styles.Logo} src="pics/Wave.png" alt="Logo" />
+                        <Image className={styles.LogoImg}  src={Wave} alt="Logo" />
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonTw}>
                         <a href="#">
-                            <img className={styles.BotonTwLinkIcono} src="pics/tw.png" alt="Twitter" />
-                            <p>@waveattheworld</p>
+                            <div className={styles.BotonTwLinkIcono}>
+                                <Image className={styles.TwImg} src={Tw} alt="Twitter" />
+                                <p className={styles.P}>@waveattheworld</p>
+                            </div>
                         </a>
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonYt}>
                         <a href="#">
-                            <img className={styles.BotonYtLinkIcono} src="pics/yt.png" alt="YouTube" />
-                            <p>waveattheworld</p>
+                            <div className={styles.BotonYtLinkIcono}>
+                                <Image className={styles.YtImg} src={Yt} alt="Youtube" />
+                                <p className={styles.P}>waveattheworld</p>
+                            </div>
                         </a>
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonInsta}>
                         <a href="https://www.instagram.com/waveattheworld/?igshid=MzRlODBiNWFlZA==">
-                            <img className={styles.BotonInstaLinkIcono} src="pics/insta.png" alt="Instagram" />
-                            <p>waveattheworld</p>
+                            <div className={styles.BotonInstaLinkIcono}>
+                                <Image className={styles.InstaImg} src={Insta} alt="Instagram" />
+                                <p className={styles.P}>waveattheworld</p>
+                            </div>
                         </a>
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonFb}>
                         <a href="#">
-                            <img className={styles.BotonFbLinkIcono} src="pics/fb.png" alt="Facebook" />
-                            <p>waveattheworld</p>
+                            <div className={styles.BotonFbLinkIcono}>
+                                <Image className={styles.FbImg} src={Fb} alt="Facebook" />
+                                <p className={styles.P}>waveattheworld</p>
+                            </div>
                         </a>
                     </div>
                 </main>
             </div>
 
             <div className={styles.RightSide}>
-                <main>
-                    <section id="contacto">
-                        <h1>Contact Us</h1>
+                <main className={styles.Main}>
+                    <section className={styles.Sections} id="contacto">
+                        <h1 className={styles.Contacto}>Contact Us</h1>
                         <form className={styles.Form} method="POST" action="https://formspree.io/f/xeqbzejy">
                             <label htmlFor="nombre">Nombre:</label>
                             <input type="text" id="nombre" name="nombre" /><br /><br />
@@ -184,9 +196,9 @@ function ContactPage() {
                             <input type="email" id="email" name="email" /><br /><br />
                             <label htmlFor="mensaje">Mensaje:</label>
                             <textarea id="mensaje" name="mensaje"></textarea><br /><br />
-                            <button type="submit">Enviar</button>
+                            <button className={styles.button} type="submit">Enviar</button>
                         </form>
-                        <p>@ 2023 WAVE</p>
+                        <p className={styles.P}>@ 2023 WAVE</p>
                     </section>
                 </main>
             </div>
@@ -194,4 +206,4 @@ function ContactPage() {
     );
 }
 
-export {Header, Imagecomponents, BloquePrecios, Imagecomponents2, BloquePrecios2, Imagecomponents3, BloquePrecios3, Imagecomponents4, BloquePrecios4};
+export {Header, Imagecomponents, BloquePrecios, Imagecomponents2, BloquePrecios2, Imagecomponents3, BloquePrecios3, Imagecomponents4, BloquePrecios4, ContactPage};

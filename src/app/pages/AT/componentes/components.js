@@ -76,4 +76,122 @@ function BloquePrecios2() {
     );
 }
 
-export { Header, Imagecomponents, BloquePrecios, Imagecomponents2, BloquePrecios2};
+const Imagecomponents3 = () => {
+    return (
+        <div className={`${styles.section3} ${styles.headerImageContainer3}`}>
+            <div className={styles.TercerText}>
+                <h1>MEDIA MANAGEMENT</h1>
+            </div>
+            <div className={styles.Description}>
+                <h1>Optimiza tu presencia en línea con nuestro análisis de mercado y estrategia digital. Aumenta leads, tráfico y conversiones mientras te destacas frente a la competencia.</h1>
+            </div>
+        </div>
+    );
+}
+
+function BloquePrecios3() {
+    return (
+        <div className={styles.BloquePrecios3}>
+             <div className={styles.PreciosCuadro3}>
+                <div className={styles.Cantidades3}>
+                    <p className={styles.texto}>$156</p>
+                    <p className={styles.texto}>Q1,095</p>
+                </div>
+            </div>
+            <div className={styles.TituloPrecios3}>
+                <h1>DIGITAL AUDIT</h1>
+            </div>
+        </div>
+    );
+}
+
+const Imagecomponents4 = () => {
+    return (
+        <div className={`${styles.section4} ${styles.headerImageContainer4}`}>
+            <div className={styles.CuartoText}>
+                <h1>MEDIA MANAGEMENT</h1>
+            </div>
+            <div className={styles.Description2}>
+                <h1>Construccion de un buyer perona para una comunicacion efectiva.</h1>
+            </div>
+        </div>
+    );
+}
+
+function BloquePrecios4() {
+    return (
+        <div className={styles.BloquePrecios4}>
+             <div className={styles.PreciosCuadro4}>
+                <div className={styles.Cantidades4}>
+                    <p className={styles.texto}>$137</p>
+                    <p className={styles.texto}>Q959</p>
+                </div>
+            </div>
+            <div className={styles.TituloPrecios4}>
+                <h1>COSTUMER IDENTIFICATION</h1>
+            </div>
+        </div>
+    );
+}
+
+function ContactPage() {
+    return (
+        <div className={styles.Container}>
+            <div className={styles.LeftSide}>
+                <main>
+                    <div className={styles.Logo} paginaweb={styles.Logo}>
+                        <img className={styles.Logo} src="pics/Wave.png" alt="Logo" />
+                    </div>
+
+                    <div className={styles.RedesSociales} paginaweb={styles.BotonTw}>
+                        <a href="#">
+                            <img className={styles.BotonTwLinkIcono} src="pics/tw.png" alt="Twitter" />
+                            <p>@waveattheworld</p>
+                        </a>
+                    </div>
+
+                    <div className={styles.RedesSociales} paginaweb={styles.BotonYt}>
+                        <a href="#">
+                            <img className={styles.BotonYtLinkIcono} src="pics/yt.png" alt="YouTube" />
+                            <p>waveattheworld</p>
+                        </a>
+                    </div>
+
+                    <div className={styles.RedesSociales} paginaweb={styles.BotonInsta}>
+                        <a href="https://www.instagram.com/waveattheworld/?igshid=MzRlODBiNWFlZA==">
+                            <img className={styles.BotonInstaLinkIcono} src="pics/insta.png" alt="Instagram" />
+                            <p>waveattheworld</p>
+                        </a>
+                    </div>
+
+                    <div className={styles.RedesSociales} paginaweb={styles.BotonFb}>
+                        <a href="#">
+                            <img className={styles.BotonFbLinkIcono} src="pics/fb.png" alt="Facebook" />
+                            <p>waveattheworld</p>
+                        </a>
+                    </div>
+                </main>
+            </div>
+
+            <div className={styles.RightSide}>
+                <main>
+                    <section id="contacto">
+                        <h1>Contact Us</h1>
+                        <form className={styles.Form} method="POST" action="https://formspree.io/f/xeqbzejy">
+                            <label htmlFor="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" /><br /><br />
+                            <label htmlFor="email">Email:</label>
+                            <input type="email" id="email" name="email" /><br /><br />
+                            <label htmlFor="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje"></textarea><br /><br />
+                            <button type="submit">Enviar</button>
+                        </form>
+                        <p>@ 2023 WAVE</p>
+                    </section>
+                </main>
+            </div>
+        </div>
+    );
+}
+
+export {Header, Imagecomponents, BloquePrecios, Imagecomponents2, BloquePrecios2, Imagecomponents3, BloquePrecios3, Imagecomponents4, BloquePrecios4};

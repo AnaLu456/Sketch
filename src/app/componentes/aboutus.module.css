@@ -1,0 +1,142 @@
+.body{
+    font-family: 'century gothic';
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+.submit {
+    background-color: #C74441;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+.submit:hover {
+    background-color: #E7CA4C;
+  }
+  
+.h1 {
+     color: #000000; 
+     font-size: 35px;
+  }
+  
+.body {
+    background-color: #F3EEE1;
+  }
+  
+  
+.main {
+    margin: 20px;
+  }
+  
+.section {
+    margin-top: 0px;
+  }
+  
+  .right-side {
+    float: right;
+    width: 55%;
+    background-color: #F3EEE1;
+    padding: 0px;
+  }
+  
+  .right-side section {
+    margin-top: 0px;
+  }
+  
+  .body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'csentury gothic';
+    margin-top: 0px;
+  }
+  
+  .p {
+    color: #000000;
+    line-height: 0px;
+  }
+  
+
+  
+
+  
+  .redes-sociales img{
+    margin-bottom: 20px;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    align-items: center;
+    }
+    
+    .redes-sociales p {
+    margin-right: 10px;
+    color: #000000;
+    font-size: 16px;
+    }
+    
+  
+    .botontwlinkicono,
+    .botonytlinkicono,
+    .botoninstalinkicono,
+    .botonfblinkicono {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    }
+  
+.submit {
+    background-color: #EC5E32;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  
+.main {
+    margin: 20px;
+  }
+  
+.section {
+    margin-bottom: 20px;
+  }
+  
+  .logo{
+    width: 150px;
+    height: 85px;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  
+  .botontwlinkicono{
+    width: 40px;
+    height: 30px;
+  }
+  
+  .botonytlinkicono{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .botoninstalinkicono{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .botonfblinkicono{
+    width: 40px;
+    height:40px;
+  }

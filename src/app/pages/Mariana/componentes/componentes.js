@@ -6,12 +6,17 @@ import img1 from '../imagenes/Wave.png';
 import img2 from '../imagenes/image8.png';
 import img3 from '../imagenes/image9.png';
 import img4 from '../imagenes/image10.png';
+import Link from 'next/link'
 
 
 function Header() {
     return (
         <div className={styles.Header}>
-            <Image src={img1} className={styles.logo}></Image>
+            <Link target='_blank' href="http://localhost:3000/pages/andremarco">
+                <button className={styles.botonLogo}>
+                    <Image src={img1} className={styles.logo}></Image>
+                </button>
+            </Link>
         </div>
     );
 }

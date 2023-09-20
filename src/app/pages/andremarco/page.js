@@ -6,7 +6,7 @@ import img3 from "../../../../public/imagencarrusel3.jpg";
 import img4 from "../../../../public/imagencarrusel4.jpg";
 import Video from "../../componentes/video.js";
 import {Header} from "./../Mariana/componentes/componentes.js"
-import {aboutus} from "./../../componentes/aboutus.js"
+import {Aboutus} from "./../../componentes/aboutus.js"
 
 
 const imagenes = [
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
       </div>
       <div className="contactus" >
-      <aboutus></aboutus>
+      <Aboutus></Aboutus>
       </div>
     </main>
 

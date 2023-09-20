@@ -3,7 +3,7 @@ import styles from "./aboutus.module.css";
 
 function aboutus() {
   return (
-    <body>
+    <div>
       <div className={styles.container}>
         <div className={styles.leftSide}>
           <main>
@@ -76,7 +76,7 @@ function aboutus() {
           </section>
         </main>
       </div>
-    </body>
+    </div>
   );
 }
 

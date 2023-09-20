@@ -187,19 +187,25 @@ function ContactPage() {
 
             <div className={styles.RightSide}>
                 <main className={styles.Main}>
-                    <section className={styles.Sections} id="contacto">
-                        <h1 className={styles.Contacto}>Contact Us</h1>
-                        <form className={styles.Form} method="POST" action="https://formspree.io/f/xeqbzejy">
-                            <label htmlFor="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" /><br /><br />
-                            <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" name="email" /><br /><br />
-                            <label htmlFor="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje"></textarea><br /><br />
+                    <h1 className={styles.Contacto}>Contact Us</h1>
+                    <div className={styles.wrapper}>
+                        <form className={styles.Form} method="POST" action="https://formspree.io/f/moqokldg">
+                            <div className={styles.Caja}>
+                                <input name="text" type="text" id="Nombre" placeholder="Nombre:" required></input>
+                                <i className={styles.bxCaja1}></i>
+                            </div>
+                            <div className={styles.Caja}>
+                                <input name="email" type="email" id="Email" placeholder="Email:" required></input>
+                                <i className={styles.bxCaja2}></i>
+                            </div>
+                            <div className={styles.Caja}>
+                                <input name="mensaje" id="Mensaje" placeholder="Mensaje" required></input>
+                                <i className={styles.bxCaja3}></i>
+                            </div>
                             <button className={styles.button} type="submit">Enviar</button>
                         </form>
-                        <p className={styles.P}>@ 2023 WAVE</p>
-                    </section>
+                    </div>
+                    <p className={styles.Final}>@ 2023 WAVE</p>
                 </main>
             </div>
         </div>

@@ -466,9 +466,11 @@
 }
   
 .Container {
-    float: left;
-    width: 45%; /* Adjust width as needed */
-    padding: 0px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una fila */
+    justify-content: space-between; /* Distribuye el espacio disponible entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos en el contenedor */
+    padding: 0;
     background-color: #F3EEE1;
     width: 100%;
     margin-top: 5px;
@@ -476,6 +478,21 @@
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
     font-family: 'century gothic';
   }
+  
+  /* Ajusta el ancho de los elementos internos y el espacio entre ellos */
+  .Container > * {
+    flex: 1; /* Hace que cada elemento tome igual de espacio disponible */
+    margin: 3px; /* Espacio entre los elementos, puedes ajustarlo según tus preferencias */
+    max-width: calc(47% - 6px); /* Ajusta el ancho máximo de los elementos */
+  }
+  
+  /* Espacio adicional en los bordes izquierdo y derecho del contenedor */
+  .Container::before,
+  .Container::after {
+    content: "";
+    flex: 1; /* Añade espacio adicional en los bordes */
+    max-width: calc(3% - 6px); /* Ajusta el espacio adicional en los bordes */
+  }  
   
   .Button {
     background-color: #C74441;
@@ -494,18 +511,19 @@
     background-color: #E7CA4C;
   }
   
-  .Contacto {
-    color: #000000;
-    font-size: 35px;
-  }
-  
-  .Main {
-    margin: 20px;
-  }
-  
   .Sections {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a horizontal (en la misma línea) */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 10vh; /* Ajusta la cantidad de espacio en la parte superior según tus preferencias */
   }
+  
+  .Sections > * {
+    margin: 0 5px; /* Espacio horizontal muy pequeño entre elementos */
+  }
+  
   
   /* Logo and Social Media Icons */
   .Logo {
@@ -534,7 +552,7 @@
   }
 
   .TwImg {
-    width: 5%;
+    width: 8%;
     height: fit-content;
   }
 
@@ -566,11 +584,6 @@
     justify-content: left;
   }
   
-  /* Contact Form */
-  .Form {
-    margin-top: 0px;
-  }
-  
   /* Additional Styles */
   .body {
     background-color: #000;
@@ -579,3 +592,41 @@
     margin-top: 0px;
   }
   
+  .Contacto {
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .wrapper {
+    width: 500px;
+    background-color: #F4F197;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 0px;
+    padding: 30px 40px;
+  }
+
+  .wrapper .Caja {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #F3EEE1;
+    margin: 30px 0;
+    border-radius: 0px;
+    color: #fff;
+  }
+
+  .Caja input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 0px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }

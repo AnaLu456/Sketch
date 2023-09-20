@@ -593,8 +593,11 @@
   }
   
   .Contacto {
+    display: flex;
     font-size: 36px;
     text-align: center;
+    justify-content: center;
+    width: 500px;
     color: #000000;
   }
 
@@ -605,7 +608,7 @@
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 0px;
-    padding: 30px 40px;
+    padding: 10px 40px;
   }
 
   .wrapper .Caja {
@@ -627,6 +630,47 @@
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 0px;
     font-size: 16px;
-    color: #fff;
+    color: black;
     padding: 20px 45px 20px 20px;
+  }
+
+  .Caja input::placeholder {
+    color: black;
+    font-weight: bold;
+  }
+
+  .Caja i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .wrapper .button {
+    width: 100%;
+    height: 45px;
+    background: #EC5E32;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+  }
+
+  .button a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .button a:hover {
+    text-decoration: underline;
+  }
+
+  .Final {
+    display: flex;
+    width: 500px;
+    justify-content: center;
   }

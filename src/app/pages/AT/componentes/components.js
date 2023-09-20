@@ -199,10 +199,10 @@ function ContactPage() {
                                 <i className={styles.bxCaja2}></i>
                             </div>
                             <div className={styles.Caja}>
-                                <input name="mensaje" id="Mensaje" placeholder="Mensaje" required></input>
+                                <input name="mensaje" id="Mensaje" placeholder="Mensaje:" required></input>
                                 <i className={styles.bxCaja3}></i>
                             </div>
-                            <button className={styles.button} type="submit">Enviar</button>
+                            <button className={styles.button} type="submit">ENVIAR</button>
                         </form>
                     </div>
                     <p className={styles.Final}>@ 2023 WAVE</p>

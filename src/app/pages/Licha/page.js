@@ -1,6 +1,6 @@
 
-import { Bloquep, BloquePrecios, BloquePrecios1, BloquePrecios2, Imagendiv2 } from "../Licha/Componentes/div1";
-import Imagediv1, { Textoimagen } from "./Componentes/div1";
+import { BloquePrecios1, BloquePrecios2, BloquePrecios3, Imagendiv2, Imagendiv3} from "../Licha/Componentes/div1";
+import Imagediv1 from "./Componentes/div1";
 import {Header} from "./Componentes/header";
 
 
@@ -13,6 +13,9 @@ export default function Home() {
       <BloquePrecios1></BloquePrecios1>
       <Imagendiv2> </Imagendiv2>
       <BloquePrecios2></BloquePrecios2>
+      <Imagendiv3></Imagendiv3>
+      <BloquePrecios3></BloquePrecios3>
+
     </div>
     
   );

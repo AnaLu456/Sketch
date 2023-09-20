@@ -2,17 +2,17 @@
 import React, { useState } from 'react';
 import styles from './componentes.module.css';
 import Image from 'next/image';
-import img1 from '../imagenes/Wave.png';
-import img2 from '../imagenes/image8.png';
-import img3 from '../imagenes/image9.png';
-import img4 from '../imagenes/image10.png';
+import img1 from '../pages/Mariana/imagenes/Wave.png';
+import img2 from '../pages/Mariana/imagenes/image8.png';
+import img3 from '../pages/Mariana/imagenes/image9.png';
+import img4 from '../pages/Mariana/imagenes/image10.png';
 import Link from 'next/link'
 
 
 function Header() {
     return (
         <div className={styles.Header}>
-            <Link target='_blank' href="http://localhost:3000/pages/andremarco">
+            <Link target='_blank' href="localhost:3000/pages/andremarco">
                 <button className={styles.botonLogo}>
                     <Image src={img1} className={styles.logo}></Image>
                 </button>

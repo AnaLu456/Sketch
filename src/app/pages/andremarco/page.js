@@ -51,26 +51,10 @@ export default function Home() {
       </div>
       <div className="paquetes">
 
-        <div className="personalaccount">
-          <div className="moreinfo">
-            <button className="moreinfo_button"></button>
-          </div>
-        </div>
-
-        <div className="companyaccount">
-          <div className="companymoreinfo">
-            <button className="companymoreinfobutton"></button>
-          </div>
-        </div>
-
-        <div className="outsidecombo">
-          <div className="outsidemoreinfo">
-            <button className="outsidemoreinfobutton"></button>
-          </div>
-        </div>
+        
       </div>
       <div className="contactus" >
-      <aboutus></aboutus>
+      <Aboutus></Aboutus>
       </div>
     </main>
 

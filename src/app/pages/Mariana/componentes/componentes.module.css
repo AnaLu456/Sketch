@@ -7,9 +7,15 @@
     margin-bottom: 10px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.55);
     position: sticky;
+    top: 0;
+}
+.botonLogo{
+    width: 40%;
+    border: 2px solid #EC5E32;
+    background-color: #F3EEE1 ;
 }
 .logo{
-    width: 40%;
+    width: 100%;
     height: fit-content;
     margin-left: 3%;
 }
@@ -50,13 +56,12 @@
 .container{
     position: relative;
     background-color:#F3EEE1;
-    padding-bottom: 20%;
 }
 .img{
     width: 100%;
     height: max-content;
 }
-.titulo,.texto{
+.titulo,.texto,.texto3{
     position: absolute;
     color: #ffffff;
 }
@@ -65,33 +70,92 @@
     left: 2%;
     font-size: 100%;
 }
-.texto{
+.texto,.texto3{
     top: 22%;
     left: 64%;
     right: 2%;
     font-size: 80%;
 }
-
-.precio,.paquete{
+.texto3{
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.botones{
+    border: 2px solid #EC5E32;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 5%;
+    padding-bottom: 5%; 
+}
+.precios{
+    border: 2px solid #EC5E32;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: left;
+    align-items: center;
+}
+.precioD,.precioQ{
     text-align: center;
-    padding-left: 3%;
-    padding-right: 3%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #F3EEE1;
+    border: 2px solid #000000;
+    height: 100%;
+    width: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 100%;
+
+}
+.precioD{
+    margin-right: 10%;
+}
+.paquete{
+    border: 2px solid #EC5E32;
+    width: 35%;
+    padding-left: 1%;
+    font-size: 115%;
+    display: flex;
+    align-items: center;
+}
+
+/*
+.precioD,.precioQ,.paquete{
+    text-align: center;
+    padding-left: 6%;
+    padding-right: 6%;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
+    border: 2px solid #EC5E32;
 }
-.precio{
+.precios{
+    border: 2px solid #EC5E32;
+    display: flex;
+    flex-direction: row;
+}
+.precioD,.precioQ{
     background-color: #F3EEE1;
     border: 2px solid #000000;
     font-size: 80%;
 }
+.precioD{
+    margin-right: 5%;
+}
 .paquete{
-    font-size: 150%;
+    margin-left: 0%;
+    padding-left: 3%;
+    margin-right: 5%;
+    font-size: 120%;
 }
 .botones{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     position: absolute;
     top: 80%;
 }
+*/

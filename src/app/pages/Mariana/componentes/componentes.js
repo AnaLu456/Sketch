@@ -4,12 +4,19 @@ import styles from './componentes.module.css';
 import Image from 'next/image';
 import img1 from '../imagenes/Wave.png';
 import img2 from '../imagenes/image8.png';
+import img3 from '../imagenes/image9.png';
+import img4 from '../imagenes/image10.png';
+import Link from 'next/link'
 
 
 function Header() {
     return (
         <div className={styles.Header}>
-            <Image src={img1} className={styles.logo}></Image>
+            <Link target='_blank' href="http://localhost:3000/pages/andremarco">
+                <button className={styles.botonLogo}>
+                    <Image src={img1} className={styles.logo}></Image>
+                </button>
+            </Link>
         </div>
     );
 }
@@ -24,21 +31,37 @@ function PaletaDeColores() {
         </div>
     );
 }
-function Filap() {
+
+function EstructuraFila({ imagenes, texto, clase, precioD, precioQ, paquete }) {
     return (
         <div className={styles.fila}>
             <div className={styles.container}>
-                <div className={styles.botones}>
-                    <button type="button" className={styles.precio}><p1>$250 <br></br>Q1,755</p1></button>
-                    <h1 className={styles.paquete}>START PACK</h1>
-                </div>
-                <Image src={img2} className={styles.img}></Image>
+                <Image src={imagenes} className={styles.img} />
                 <h1 className={styles.titulo}>PERSONAL ACCOUNT</h1>
-                <p className={styles.texto}>1 sesión de fotos al mes 4 post mensuales en el feed 8 historias mensuales organización de highlights Pro Copyright</p>
+                <p className={clase}>{texto}</p>
+                <div className={styles.botones}>
+                    <h1 className={styles.paquete}>{paquete} PACK</h1>
+                    <div className={styles.precios} >
+                        <button type="button" className={styles.precioD}><p1>${precioD}</p1></button>
+                        <button type="button" className={styles.precioQ}><p1>Q{precioQ}</p1></button>
+                    </div>
+                </div>
             </div>
         </div>
 
-    )
+    );
 }
 
-export { Header, PaletaDeColores, Filap };
+function Filap() {
+    return (
+        <div>
+            <EstructuraFila imagenes={img2} texto="1 sesión de fotos al mes 4 post mensuales en el feed 8 historias mensuales organización de highlights Pro Copyright" clase={styles.texto} precioD="250" precioQ="1,755" paquete="START" />
+            <EstructuraFila imagenes={img3} texto="1 sesión de fotos al mes 8 post mensuales en el feed 12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics." clase={styles.texto} precioD="470" precioQ="2,925" paquete="GROW" />
+            <EstructuraFila imagenes={img4} texto="1 sesión de fotos al mes 8 post mensuales en el feed 12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics." clase={styles.texto3} precioD="585" precioQ="4,095" paquete="MANTAIN" />
+        </div>
+    );
+}
+
+
+
+export { Header, PaletaDeColores, Filap, EstructuraFila };

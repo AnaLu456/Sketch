@@ -1,3 +1,4 @@
+
 .Header {
     background-color: #F3EEE1;
     height: 100%;
@@ -6,105 +7,89 @@
     margin-bottom: 10px;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.55);
     position: sticky;
+    top: 0;
 }
-
-.logo {
+.botonLogo{
     width: 40%;
+    border: 2px solid #EC5E32;
+    background-color: #F3EEE1 ;
+}
+.logo{
+    width: 100%;
     height: fit-content;
     margin-left: 3%;
 }
-
-.color1,
-.color2,
-.color3,
-.color4 {
+.color1,.color2,.color3,.color4{
     float: left;
     width: 25%;
     padding: 2%;
     color: black;
     text-align: center;
 }
-
-.paleta::after {
+.paleta::after{
     content: "";
     clear: both;
     display: table;
 }
-
-.paleta {
+.paleta{
     margin: 3%;
 }
-
 .color1 {
     color: white;
     background-color: #000000;
 }
-
 .color2 {
     background-color: #F3EEE1;
 }
-
 .color3 {
     background-color: #EC5E32;
 }
-
 .color4 {
     background-color: #F3F1A2;
 }
 
-.fila {
+.fila{
     grid-template-columns: auto auto;
     margin-bottom: 7px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.30);
 }
-
-.container {
+.container{
     position: relative;
-    background-color: #F3EEE1;
+    background-color:#F3EEE1;
 }
-
-.img {
+.img{
     width: 100%;
     height: max-content;
 }
-
-.titulo,
-.texto,
-.texto3 {
+.titulo,.texto,.texto3{
     position: absolute;
     color: #ffffff;
 }
-
-.titulo {
+.titulo{
     top: 18%;
     left: 2%;
     font-size: 100%;
 }
-
-.texto,
-.texto3 {
+.texto,.texto3{
     top: 22%;
     left: 64%;
     right: 2%;
     font-size: 80%;
 }
-
-.texto3 {
+.texto3{
     color: #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.botones {
+.botones{
     border: 2px solid #EC5E32;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 5%; 
 }
-
-.precios {
+.precios{
     border: 2px solid #EC5E32;
     display: flex;
     flex-direction: row;
@@ -112,9 +97,7 @@
     justify-content: left;
     align-items: center;
 }
-
-.precioD,
-.precioQ {
+.precioD,.precioQ{
     text-align: center;
     width: fit-content;
     height: fit-content;
@@ -127,12 +110,10 @@
     font-size: 100%;
 
 }
-
-.precioD {
+.precioD{
     margin-right: 10%;
 }
-
-.paquete {
+.paquete{
     border: 2px solid #EC5E32;
     width: 35%;
     padding-left: 1%;

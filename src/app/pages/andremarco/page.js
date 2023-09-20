@@ -5,8 +5,8 @@ import img2 from "../../../../public/imagencarrusel2.jpg";
 import img3 from "../../../../public/imagencarrusel3.jpg";
 import img4 from "../../../../public/imagencarrusel4.jpg";
 import Video from "../../componentes/video.js";
-import {Header} from "./../Mariana/componentes/componentes.js"
-import {Aboutus} from "./../../componentes/aboutus.js"
+import {Header} from "../../componentes/componentes.js"
+import {aboutus} from "./../../componentes/aboutus.js"
 
 
 const imagenes = [

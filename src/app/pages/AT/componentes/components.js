@@ -151,7 +151,7 @@ function ContactPage() {
                         <a href="#">
                             <div className={styles.BotonTwLinkIcono}>
                                 <Image className={styles.TwImg} src={Tw} alt="Twitter" />
-                                <p className={styles.P}>@waveattheworld</p>
+                                <p className={styles.Nombre}>@waveattheworld</p>
                             </div>
                         </a>
                     </div>
@@ -160,7 +160,7 @@ function ContactPage() {
                         <a href="#">
                             <div className={styles.BotonYtLinkIcono}>
                                 <Image className={styles.YtImg} src={Yt} alt="Youtube" />
-                                <p className={styles.P}>waveattheworld</p>
+                                <p className={styles.Nombre}>waveattheworld</p>
                             </div>
                         </a>
                     </div>
@@ -169,7 +169,7 @@ function ContactPage() {
                         <a href="https://www.instagram.com/waveattheworld/?igshid=MzRlODBiNWFlZA==">
                             <div className={styles.BotonInstaLinkIcono}>
                                 <Image className={styles.InstaImg} src={Insta} alt="Instagram" />
-                                <p className={styles.P}>waveattheworld</p>
+                                <p className={styles.Nombre}>waveattheworld</p>
                             </div>
                         </a>
                     </div>
@@ -178,7 +178,7 @@ function ContactPage() {
                         <a href="#">
                             <div className={styles.BotonFbLinkIcono}>
                                 <Image className={styles.FbImg} src={Fb} alt="Facebook" />
-                                <p className={styles.P}>waveattheworld</p>
+                                <p className={styles.Nombre}>waveattheworld</p>
                             </div>
                         </a>
                     </div>

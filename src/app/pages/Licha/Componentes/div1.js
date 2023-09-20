@@ -61,10 +61,39 @@ function BloquePrecios2() {
     );
 }
 
+const Imagendiv3 = () =>{
+    return (
+
+        <div className={styles.section3}>
+            <div className={styles.Bloquetexto3}>
+            <h1> COMPANY ACCOUNT</h1>
+        </div>
+        </div>
+       
+     
+    )
+
+}
+
+function BloquePrecios3() {
+    return (
+        <div className={styles.BloqueP3}>
+             <div className={styles.Cuadroprecios3}>
+                <div className={styles.Dinero3}>
+                    <h1>$1,170</h1>
+                    <h1>Q8,190</h1>
+                </div>
+            </div>
+            <div className={styles.Preciost3}>
+                <h1>LIVE PACK</h1>
+            </div>
+        </div>
+    );
+}
 
 export default Imagediv1;
 
-export {BloquePrecios1, BloquePrecios2, Imagendiv2};
+export {BloquePrecios1, BloquePrecios2, Imagendiv2,Imagendiv3, BloquePrecios3};
 
 
 

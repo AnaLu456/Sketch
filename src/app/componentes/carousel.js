@@ -95,7 +95,6 @@ const Carousel = ({ images }) => {
           {imageContainer}
           <div className={styles.titleContainer}>
             <h1 >{images[currentIndex].title}</h1>
-            <button>Click Me</button>
           </div>
         </AnimatePresence>
         <div className={styles.slidedirection}>

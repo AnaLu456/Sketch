@@ -611,7 +611,7 @@
     padding: 10px 40px;
   }
 
-  .wrapper .Caja {
+  .wrapper .caja {
     position: relative;
     width: 100%;
     height: 50px;
@@ -621,7 +621,7 @@
     color: #fff;
   }
 
-  .Caja input {
+  .caja input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -634,13 +634,14 @@
     padding: 20px 45px 20px 20px;
   }
 
-  .Caja input::placeholder {
+  .caja input::placeholder {
     color: black;
     font-weight: bold;
   }
 
-  .Caja i {
-    position: absolute;
+  .caja i {
+    display: flex;
+    align-items: center;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
@@ -674,3 +675,16 @@
     width: 500px;
     justify-content: center;
   }
+
+  @media screen and (max-width: 600px)  {
+  .Container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  }
+  .Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

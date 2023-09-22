@@ -1,50 +1,148 @@
-.todo{
+.todo {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.nosotrosparrafo{
+
+.nosotrosparrafo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 15%;
-  color:white;
+  color: white;
   text-align: center;
   font-size: 20px;
 }
-.nosotros{
+
+.nosotros {
   background-image: url("../../../../public/fondonosotros.jpeg");
   background-size: cover;
-  color:white;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
 }
+
+.paquetes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.personalimage {
+  width: 250px;
+  height: 320px;
+  display: flex;
+  padding: 10px;
+  box-shadow: 2px;
+}
+
+.personaltitle {
+  font-size: 20px;
+
+}
+
+.personal1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 350px;
+  background-color: #F4F197;
+  margin: 10px;
+
+}
+
+.personal2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 350px;
+  background-color: #F4F197;
+  margin: 10px;
+}
+
+.personal3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 350px;
+  background-color: #F4F197;
+  margin: 10px;
+
+}
+
+.personal2texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 320px;
+}
+
+.personalbutton {
+  height: 30px;
+  width: 100px;
+  font-size: large;
+}
+
 @media only screen and (min-width: 600px) {
-  
-  .todo{
+
+  .todo {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .nosotrosparrafo{
+
+  .nosotrosparrafo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 15%;
-    color:white;
+    color: white;
     text-align: center;
     font-size: 40px;
   }
-  .nosotros{
+
+  .nosotros {
     background-image: url("../../../../public/fondonosotros.jpeg");
     background-size: cover;
-    color:white;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 64px;
     margin-top: 10px;
+  }
+
+  .personalimage {
+    width: 480px;
+    height: 300px;
+    display: flex;
+    padding: 10px;
+  }
+
+  .personal1,
+  .personal2,
+  .personal3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 450px;
+    background-color: #F4F197;
+    margin: 10px;
+  }
+
+  .personalimage{
+    height: 500px;
+  }
+  .paquetes{
+    display: flex;
+    flex-direction: row;
   }
 }

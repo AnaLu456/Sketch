@@ -190,15 +190,15 @@ function ContactPage() {
                     <h1 className={styles.Contacto}>Contact Us</h1>
                     <div className={styles.wrapper}>
                         <form className={styles.Form} method="POST" action="https://formspree.io/f/moqokldg">
-                            <div className={styles.Caja}>
+                            <div className={styles.caja}>
                                 <input name="text" type="text" id="Nombre" placeholder="Nombre:" required></input>
                                 <i className={styles.bxCaja1}></i>
                             </div>
-                            <div className={styles.Caja}>
+                            <div className={styles.caja}>
                                 <input name="email" type="email" id="Email" placeholder="Email:" required></input>
                                 <i className={styles.bxCaja2}></i>
                             </div>
-                            <div className={styles.Caja}>
+                            <div className={styles.caja}>
                                 <input name="mensaje" id="Mensaje" placeholder="Mensaje:" required></input>
                                 <i className={styles.bxCaja3}></i>
                             </div>

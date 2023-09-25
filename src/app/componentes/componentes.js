@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import styles from './componentes.module.css';
 import Image from 'next/image';
-import img1 from '../packages/Mariana/imagenes/Wave.png';
-import img2 from '../packages/Mariana/imagenes/80.jpg';
-import img3 from '../packages/Mariana/imagenes/12.jpg';
-import img4 from '../packages/Mariana/imagenes/23.jpg';
+import img1 from '../packages/personal/imagenes/Wave.png';
+import img2 from '../packages/personal/imagenes/80.jpg';
+import img3 from '../packages/personal/imagenes/12.jpg';
+import img4 from '../packages/personal/imagenes/23.jpg';
 import Link from 'next/link'
 
 

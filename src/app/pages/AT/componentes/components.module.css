@@ -650,5 +650,39 @@
   }
 
   @media only screen and (max-width: 393px) {
-    
+    .BloquePrecios {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .PreciosCuadro2 {
+      width: 210px; /* Ancho del rectángulo */
+      height: 120px; /* Altura del rectángulo */
+    }
+
+    .BloquePrecios2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .BloquePrecios3 {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .BloquePrecios4 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .Description {
+      font-size: 12.5px;
+      padding-left: 100px; /* Agrega relleno alrededor del texto */
+  }
+
+  .Description2 {
+    font-size: 12.5px;
+    padding-left: 100px; /* Agrega relleno alrededor del texto */
+}
+
   }

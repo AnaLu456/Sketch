@@ -1,0 +1,81 @@
+.todo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nosotrosparrafo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15%;
+  color:white;
+  text-align: center;
+  font-size: 20px;
+}
+.nosotros{
+  background-image: url("../../../../public/fondonosotros.jpeg");
+  background-size: cover;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.paquetes{
+  display: flex;
+  flex-direction: row;
+}
+
+.personal{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.company{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.outside{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+  
+  .todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nosotrosparrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15%;
+    color:white;
+    text-align: center;
+    font-size: 40px;
+  }
+  .nosotros{
+    background-image: url("../../../../public/fondonosotros.jpeg");
+    background-size: cover;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 64px;
+    margin-top: 10px;
+  }
+}

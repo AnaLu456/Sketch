@@ -24,6 +24,22 @@ background-size: cover;
     display: flex;
     align-items: center;
     padding: 20px;
+
+
+}
+
+.Bloquetp{
+    color: #FFF;
+    font-family: Koulen;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 60%;
+    padding-right: 5%;
 }
 
 .BloqueP {
@@ -38,6 +54,7 @@ background-size: cover;
     flex-direction: row; 
 
 }
+
 
 
 .Cuadroprecios {
@@ -85,6 +102,8 @@ background-size: cover;
     
 }
 
+
+
 .Bloquetexto2{
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -96,6 +115,20 @@ background-size: cover;
     display: flex;
     align-items: center;
     padding: 20px;
+}
+
+.Bloquetp2{
+    color: #FFF;
+    font-family: Koulen;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    padding-left: 60%;
+    padding-right: 5%;
 }
 
 .BloqueP2 {
@@ -167,6 +200,21 @@ background-size: cover;
     padding: 20px;
 }
 
+.Bloquetp3{
+    color: #FFF;
+    font-family: Koulen;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 60%;
+    padding-right: 5%;
+    
+}
+
 .BloqueP3 {
     background-color: #F3EEE1;
     width: 100%;
@@ -216,3 +264,87 @@ background-size: cover;
     line-height: normal;
     
 }
+
+
+@media (min-width:390px) {
+    .Preciost {
+        font-size: 13px;
+
+    }
+    .BloqueP {
+        padding: 20px;
+    }
+    .Preciost2{
+        font-size: 13px;
+    }
+
+    .BloqueP2{
+        padding: 20px;
+    }
+
+    .Preciost3{
+        font-size: 13px;
+    }
+
+    .BloqueP3{
+        padding: 20px;
+    }
+
+    .Dinero{
+        font-size: 14px;
+    }
+
+    .Dinero2{
+        font-size: 14px;
+    }
+
+    .Dinero3{
+        font-size: 14px;
+    }
+
+    .Cuadroprecios{
+        width: 180px; 
+        height: 70px;
+
+    }
+
+    .Cuadroprecios2{
+        width: 180px; 
+        height: 70px;
+
+    }
+
+    .Cuadroprecios3{
+        width: 180px; 
+        height: 70px;
+    }
+ 
+    .Bloquetp{
+        font-size: 25px;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+    .Bloquetexto{
+        padding-left: 25%;
+    }
+
+    .Bloquetexto2{
+        padding-left: 25%;
+    }
+    .Bloquetp2{
+        font-size: 25px; 
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+
+    .Bloquetexto3{
+        padding-left: 25%;
+    }
+
+    .Bloquetp3{
+        font-size: 25px; 
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+}
+

@@ -10,6 +10,13 @@ const Imagediv1 = () => {
             <div className={styles.Bloquetexto}>
             <h1> COMPANY ACCOUNT</h1>
         </div>
+        <div className={styles.Bloquetp}>
+           <p>
+           1 sesión del fotos al mes
+           16 post mensuales en el feed
+           12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics Client Service. 
+           </p>
+           </div>
         </div>
        
      
@@ -38,6 +45,13 @@ const Imagendiv2 = () =>{
             <div className={styles.Bloquetexto2}>
             <h1> COMPANY ACCOUNT</h1>
         </div>
+        <div className={styles.Bloquetp2}>
+           <p>
+           1 sesión del fotos al mes
+           16 post mensuales en el feed
+           12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics Client Service. 
+           </p>
+        </div>
         </div>
        
      
@@ -57,6 +71,7 @@ function BloquePrecios2() {
             <div className={styles.Preciost2}>
                 <h1>IDEAL PACK</h1>
             </div>
+
         </div>
     );
 }
@@ -67,6 +82,11 @@ const Imagendiv3 = () =>{
         <div className={styles.section3}>
             <div className={styles.Bloquetexto3}>
             <h1> COMPANY ACCOUNT</h1>
+        </div>
+        <div className={styles.Bloquetp3}>
+           <p>
+           2 sesión del fotos al mes, 20 post mensuales en el feed, (12 fotos y 8 reels) 28 historias al mes + organización de highlights Pro Copyright Monthly Analytics Client Service Adds Consultancies.                                                                                                                                            
+           </p>
         </div>
         </div>
        

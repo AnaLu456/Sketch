@@ -21,6 +21,31 @@
   align-items: center;
   margin-top: 30px;
 }
+
+.paquetes{
+  display: flex;
+  flex-direction: row;
+}
+
+.personal{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.company{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.outside{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+
 @media only screen and (min-width: 600px) {
   
   .todo{

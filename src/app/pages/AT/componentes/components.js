@@ -47,7 +47,7 @@ function BloquePrecios() {
                 </div>
             </div>
             <div className={styles.TituloPrecios}>
-                <h1>SESIÓN DE FOTOS</h1>
+                <h1>SESION DE FOTOS</h1>
             </div>
         </div>
     );
@@ -183,13 +183,14 @@ function ContactPage() {
                         </a>
                     </div>
                 </main>
+                
             </div>
-
             <div className={styles.RightSide}>
                 <main className={styles.Main}>
-                    <h1 className={styles.Contacto}>Contact Us</h1>
                     <div className={styles.wrapper}>
+                        
                         <form className={styles.Form} method="POST" action="https://formspree.io/f/moqokldg">
+                            <h1 className={styles.Contacto}>Contact Us</h1>
                             <div className={styles.Caja}>
                                 <input name="text" type="text" id="Nombre" placeholder="Nombre:" required></input>
                                 <i className={styles.bxCaja1}></i>
@@ -205,9 +206,9 @@ function ContactPage() {
                             <button className={styles.button} type="submit">ENVIAR</button>
                         </form>
                     </div>
-                    <p className={styles.Final}>@ 2023 WAVE</p>
                 </main>
             </div>
+            <p className={styles.Final}>@ 2023 WAVE</p>
         </div>
     );
 }

@@ -1,95 +1,84 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.css";
+import Carousel from "../app/componentes/carousel.js";
+import img1 from "../../public/imagencarrusel1.jpg";
+import img2 from "../../public/imagencarrusel2.jpg";
+import img3 from "../../public/imagencarrusel3.jpg";
+import img4 from "../../public/imagencarrusel4.jpg";
+import img5 from "../../public/hombre.jpg";
+import img6 from "../../public/cafe.jpg";
+import img7 from "../../public/modelo.jpg";
+import Video from "../app/componentes/video.js";
+import { Header } from "../app/componentes/componentes.js";
+import Image from "next/image";
+import img8 from "../../public/fondonosotros.jpeg";
+import { ContactPage } from "./packages/outside/componentes/components";
+
+const imagenes = [
+  img1,
+  img2,
+  img3,
+  img4,
+];
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={styles.todo}>
+      <Header></Header>
+
+      <div>
+        <Carousel images={imagenes}></Carousel>
+      </div>
+
+      <div className={styles.video}>
+        <Video className={styles.video}></Video>
+      </div>
+
+      <div
+      className={styles.nosotros}
+        style={{
+          backgroundImage: `url(${img8.src})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <h1 className={styles.nosotrostitulo}>Nosotros</h1>
+        <div className={styles.nosotrosinfo}>
+          <p className={styles.nosotrosparrafo}>
+            Somos una empresa de marketing que tiene como mision impulsar el
+            crecimiento y visibilidad de tu empresa mediante una gestion
+            estrategica de redes, creación de contenido digital de alta calidad y
+            analisis de mercado.
+          </p>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.paquetes}>
+        <div className={styles.personal1}>
+          <Image src={img6} className={styles.personalimage}></Image>
+          <div className={styles.personal2texto}>
+            <h1 className={styles.personaltitle}>PERSONAL ACCOUNT</h1>
+            <button className={styles.personalbutton}>More Info</button>
+          </div>
+        </div>
+        <div className={styles.personal2}>
+          <Image src={img7} className={styles.personalimage}></Image>
+          <div className={styles.personal2texto}>
+            <h1 className={styles.personaltitle}>COMPANY</h1>
+            <button className={styles.personalbutton}>More Info</button>
+          </div>
+        </div>
+
+        <div className={styles.personal3}>
+          <Image src={img5} className={styles.personalimage}></Image>
+          <div className={styles.personal2texto}>
+            <h1 className={styles.personaltitle}>OUTSIDE COMBOS</h1>
+            <button className={styles.personalbutton}>More Info</button>
+          </div>
+        </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="contactus">
+        <ContactPage></ContactPage>
       </div>
     </main>
-  )
+  );
 }

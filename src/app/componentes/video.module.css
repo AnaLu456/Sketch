@@ -21,17 +21,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 1820px;
-        height: 1070px;
+        width: 1000px;
+        height: 800px;
     }
 
     .video{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 1820px;
-        height: 1070px;
-        border: #EC5E32 solid 2px;
+        width: 1000px;
+        height: 800px;
 
     }
 }

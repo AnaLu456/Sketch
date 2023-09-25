@@ -12,6 +12,7 @@ import { Header } from "../app/componentes/componentes.js";
 import Image from "next/image";
 import img8 from "../../public/fondonosotros.jpeg";
 import { ContactPage } from "./packages/outside/componentes/components";
+import Link from "next/link";
 
 const imagenes = [
   img1,
@@ -29,7 +30,7 @@ export default function Home() {
         <Carousel images={imagenes}></Carousel>
       </div>
 
-      <div className={styles.video}>
+      <div className={styles.videocont}>
         <Video className={styles.video}></Video>
       </div>
 
@@ -57,14 +58,14 @@ export default function Home() {
           <Image src={img6} className={styles.personalimage}></Image>
           <div className={styles.personal2texto}>
             <h1 className={styles.personaltitle}>PERSONAL ACCOUNT</h1>
-            <button className={styles.personalbutton}>More Info</button>
+            <Link className={styles.personalbutton} href="/packages/personal"> More Info</Link>
           </div>
         </div>
         <div className={styles.personal2}>
           <Image src={img7} className={styles.personalimage}></Image>
           <div className={styles.personal2texto}>
             <h1 className={styles.personaltitle}>COMPANY</h1>
-            <button className={styles.personalbutton}>More Info</button>
+            <Link className={styles.personalbutton} href="/packages/company">More Info</Link>
           </div>
         </div>
 
@@ -72,7 +73,7 @@ export default function Home() {
           <Image src={img5} className={styles.personalimage}></Image>
           <div className={styles.personal2texto}>
             <h1 className={styles.personaltitle}>OUTSIDE COMBOS</h1>
-            <button className={styles.personalbutton}>More Info</button>
+            <Link className={styles.personalbutton} href="/packages/outside">More Info</Link>
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@
   color: white;
   text-align: center;
   font-size: 20px;
+  font-family: "century Gothic";
 }
 
 .nosotros {
@@ -22,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  font-family: "century Gothic";
 }
 
 .paquetes {
@@ -41,7 +43,7 @@
 
 .personaltitle {
   font-size: 20px;
-
+  font-family: "century Gothic";
 }
 
 .personal1 {
@@ -52,7 +54,7 @@
   height: 350px;
   background-color: #F4F197;
   margin: 10px;
-
+  font-family: "century Gothic";
 }
 
 .personal2 {
@@ -63,6 +65,7 @@
   height: 350px;
   background-color: #F4F197;
   margin: 10px;
+  font-family: "century Gothic";
 }
 
 .personal3 {
@@ -73,7 +76,7 @@
   height: 350px;
   background-color: #F4F197;
   margin: 10px;
-
+  font-family: "century Gothic";
 }
 
 .personal2texto {
@@ -82,12 +85,16 @@
   align-items: center;
   justify-content: space-evenly;
   height: 320px;
+  font-family: "century Gothic";
 }
 
 .personalbutton {
   height: 30px;
   width: 100px;
   font-size: large;
+  background-color: transparent;
+  font-family: "century Gothic";
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {
@@ -145,4 +152,5 @@
     display: flex;
     flex-direction: row;
   }
+  
 }

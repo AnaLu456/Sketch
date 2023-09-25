@@ -48,7 +48,18 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="paquetes">
+      <div className={styles.paquetes}>
+        <div className={styles.personal}>
+          <p>PERSONAL ACCOUNT</p>
+        </div>
+
+        <div className={styles.company}>
+          <p>COMPANY ACCOUNT</p>
+        </div>
+
+        <div className={styles.outside}>
+          <p>OUTSIDE COMBOS</p>
+        </div>
 
         
       </div>

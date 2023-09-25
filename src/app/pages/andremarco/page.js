@@ -37,7 +37,7 @@ export default function Home() {
       
       <div className={styles.video}>
         
-        <Video className={styles.video}></Video>
+        <Video ></Video>
 
       </div>
 

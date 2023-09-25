@@ -146,3 +146,73 @@ background-size: cover;
     align-items: center;
     justify-content: center;
 }
+
+.section3 {
+    height: 60vh;
+   background-image: url("../imagenes/64.jpg");
+   background-position: center;
+   background-size: cover;
+   }
+
+   .Bloquetexto3{
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Koulen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.BloqueP3 {
+    background-color: #F3EEE1;
+    width: 100%;
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: row; 
+}
+
+.Cuadroprecios3 {
+    width: 190px; /* Ancho del rectángulo */
+    height: 82px; /* Altura del rectángulo */
+    border: 2px solid black; /* Borde de 2 píxeles de ancho y color negro */
+    background-color: transparent; /* Sin relleno (transparente) */
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    justify-content: space-evenly;
+}
+
+.Dinero3 {
+    color: #000;
+    font-family: KoPub Batang;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Preciost3 {
+    width: 30%;
+    height: fit-content;
+    margin-left: 3%;
+    color: #3D3B38;
+    font-family: Koulen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}

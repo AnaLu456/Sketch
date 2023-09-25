@@ -3,6 +3,10 @@ import styles from './components.module.css';
 import Image from 'next/image';
 import Wave from '../imágenes/Wave.png';
 import img1 from '../imágenes/img1.jpg';
+import Tw from '../imágenes/Tw.png';
+import Yt from '../imágenes/Yt.png';
+import Insta from '../imágenes/Insta.png';
+import Fb from '../imágenes/Fb.png';
 
 function Header() {
     return (
@@ -43,7 +47,7 @@ function BloquePrecios() {
                 </div>
             </div>
             <div className={styles.TituloPrecios}>
-                <h1>SESIÓN DE FOTOS</h1>
+                <h1>SESION DE FOTOS</h1>
             </div>
         </div>
     );
@@ -138,60 +142,75 @@ function ContactPage() {
     return (
         <div className={styles.Container}>
             <div className={styles.LeftSide}>
-                <main>
+                <main className={styles.Main}>
                     <div className={styles.Logo} paginaweb={styles.Logo}>
-                        <img className={styles.Logo} src="pics/Wave.png" alt="Logo" />
+                        <Image className={styles.LogoImg}  src={Wave} alt="Logo" />
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonTw}>
                         <a href="#">
-                            <img className={styles.BotonTwLinkIcono} src="pics/tw.png" alt="Twitter" />
-                            <p>@waveattheworld</p>
+                            <div className={styles.BotonTwLinkIcono}>
+                                <Image className={styles.TwImg} src={Tw} alt="Twitter" />
+                                <p className={styles.Nombre}>@waveattheworld</p>
+                            </div>
                         </a>
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonYt}>
                         <a href="#">
-                            <img className={styles.BotonYtLinkIcono} src="pics/yt.png" alt="YouTube" />
-                            <p>waveattheworld</p>
+                            <div className={styles.BotonYtLinkIcono}>
+                                <Image className={styles.YtImg} src={Yt} alt="Youtube" />
+                                <p className={styles.Nombre}>waveattheworld</p>
+                            </div>
                         </a>
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonInsta}>
                         <a href="https://www.instagram.com/waveattheworld/?igshid=MzRlODBiNWFlZA==">
-                            <img className={styles.BotonInstaLinkIcono} src="pics/insta.png" alt="Instagram" />
-                            <p>waveattheworld</p>
+                            <div className={styles.BotonInstaLinkIcono}>
+                                <Image className={styles.InstaImg} src={Insta} alt="Instagram" />
+                                <p className={styles.Nombre}>waveattheworld</p>
+                            </div>
                         </a>
                     </div>
 
                     <div className={styles.RedesSociales} paginaweb={styles.BotonFb}>
                         <a href="#">
-                            <img className={styles.BotonFbLinkIcono} src="pics/fb.png" alt="Facebook" />
-                            <p>waveattheworld</p>
+                            <div className={styles.BotonFbLinkIcono}>
+                                <Image className={styles.FbImg} src={Fb} alt="Facebook" />
+                                <p className={styles.Nombre}>waveattheworld</p>
+                            </div>
                         </a>
                     </div>
                 </main>
+                
             </div>
-
             <div className={styles.RightSide}>
-                <main>
-                    <section id="contacto">
-                        <h1>Contact Us</h1>
-                        <form className={styles.Form} method="POST" action="https://formspree.io/f/xeqbzejy">
-                            <label htmlFor="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" /><br /><br />
-                            <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" name="email" /><br /><br />
-                            <label htmlFor="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje"></textarea><br /><br />
-                            <button type="submit">Enviar</button>
+                <main className={styles.Main}>
+                    <div className={styles.wrapper}>
+                        
+                        <form className={styles.Form} method="POST" action="https://formspree.io/f/moqokldg">
+                            <h1 className={styles.Contacto}>Contact Us</h1>
+                            <div className={styles.Caja}>
+                                <input name="text" type="text" id="Nombre" placeholder="Nombre:" required></input>
+                                <i className={styles.bxCaja1}></i>
+                            </div>
+                            <div className={styles.Caja}>
+                                <input name="email" type="email" id="Email" placeholder="Email:" required></input>
+                                <i className={styles.bxCaja2}></i>
+                            </div>
+                            <div className={styles.Caja}>
+                                <input name="mensaje" id="Mensaje" placeholder="Mensaje:" required></input>
+                                <i className={styles.bxCaja3}></i>
+                            </div>
+                            <button className={styles.button} type="submit">ENVIAR</button>
                         </form>
-                        <p>@ 2023 WAVE</p>
-                    </section>
+                    </div>
                 </main>
             </div>
+            <p className={styles.Final}>@ 2023 WAVE</p>
         </div>
     );
 }
 
-export {Header, Imagecomponents, BloquePrecios, Imagecomponents2, BloquePrecios2, Imagecomponents3, BloquePrecios3, Imagecomponents4, BloquePrecios4};
+export {Header, Imagecomponents, BloquePrecios, Imagecomponents2, BloquePrecios2, Imagecomponents3, BloquePrecios3, Imagecomponents4, BloquePrecios4, ContactPage};

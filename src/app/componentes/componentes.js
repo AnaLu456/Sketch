@@ -12,7 +12,7 @@ import Link from 'next/link'
 function Header() {
     return (
         <div className={styles.Header}>
-            <Link target='_blank' href="localhost:3000/pages/andremarco">
+            <Link target='_self' href="localhost:3000/pages/andremarco">
                 <button className={styles.botonLogo}>
                     <Image src={img1} className={styles.logo}></Image>
                 </button>

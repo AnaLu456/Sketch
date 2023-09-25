@@ -1,5 +1,5 @@
 
-import { BloquePrecios1, BloquePrecios2, BloquePrecios3, Imagendiv2, Imagendiv3} from "../Licha/Componentes/div1";
+import { BloquePrecios1, BloquePrecios2, BloquePrecios3, Imagendiv2, Imagendiv3} from "./Componentes/div1";
 import Imagediv1 from "./Componentes/div1";
 import {Header} from "./Componentes/header";
 

@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import styles from './componentes.module.css';
 import Image from 'next/image';
 import img1 from '../pages/Mariana/imagenes/Wave.png';
-import img2 from '../pages/Mariana/imagenes/image8.png';
-import img3 from '../pages/Mariana/imagenes/image9.png';
-import img4 from '../pages/Mariana/imagenes/image10.png';
+import img2 from '../pages/Mariana/imagenes/80.jpg';
+import img3 from '../pages/Mariana/imagenes/12.jpg';
+import img4 from '../pages/Mariana/imagenes/23.jpg';
 import Link from 'next/link'
 
 

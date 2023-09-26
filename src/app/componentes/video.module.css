@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1800px;
-    height: 1150px;
+    width: 400px;
+    height: 200px;
     
 }
 
@@ -11,9 +11,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 250px;
-    padding: 15px;
+    width: 375px;
+    height: 200px;
 }
 
 
@@ -21,10 +20,17 @@
     .contenido{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        max-width: 600px;
-        max-height: 275px;
-        padding: 15px;
-        border: #EC5E32 solid 2px;
+        justify-content: center;
+        width: 1000px;
+        height: 800px;
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1000px;
+        height: 800px;
+
     }
 }

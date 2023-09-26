@@ -309,6 +309,7 @@
   align-items: center;
   justify-content: center; /* Centra los objetos horizontalmente */
   flex-direction: row-reverse; /* Coloca los objetos en línea horizontalmente */
+  justify-content: space;
 }
 
 .PreciosCuadro3 {
@@ -421,7 +422,7 @@ text-align: center;
   align-items: center;
   justify-content: center; /* Centra los objetos horizontalmente */
   flex-direction: row-reverse; /* Coloca los objetos en línea horizontalmente */
-  justify-content: space-evenly;
+  justify-content: space;
 }
 
 .PreciosCuadro4 {

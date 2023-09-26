@@ -8,7 +8,7 @@ import img5 from "../../public/hombre.jpg";
 import img6 from "../../public/cafe.jpg";
 import img7 from "../../public/modelo.jpg";
 import Video from "../app/componentes/video.js";
-import { Header } from "../app/componentes/componentes.js";
+import { Header } from "./componentes/componentes";
 import Image from "next/image";
 import img8 from "../../public/fondonosotros.jpeg";
 import { ContactPage } from "./packages/outside/componentes/components";
@@ -24,7 +24,7 @@ const imagenes = [
 export default function Home() {
   return (
     <main className={styles.todo}>
-      <Header></Header>
+        <Header></Header>
 
       <div>
         <Carousel images={imagenes}></Carousel>

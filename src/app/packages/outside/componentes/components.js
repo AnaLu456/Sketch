@@ -206,9 +206,9 @@ function ContactPage() {
                             <button className={styles.button} type="submit">ENVIAR</button>
                         </form>
                     </div>
+                    <p className={styles.Final}>@ 2023 WAVE</p>
                 </main>
             </div>
-            <p className={styles.Final}>@ 2023 WAVE</p>
         </div>
     );
 }

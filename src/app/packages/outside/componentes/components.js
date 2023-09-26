@@ -86,9 +86,6 @@ const Imagecomponents3 = () => {
             <div className={styles.TercerText}>
                 <h1>MEDIA MANAGEMENT</h1>
             </div>
-            <div className={styles.Description}>
-                <h1>Optimiza tu presencia en línea con nuestro análisis de mercado y estrategia digital. Aumenta leads, tráfico y conversiones mientras te destacas frente a la competencia.</h1>
-            </div>
         </div>
     );
 }
@@ -96,7 +93,11 @@ const Imagecomponents3 = () => {
 function BloquePrecios3() {
     return (
         <div className={styles.BloquePrecios3}>
-             <div className={styles.PreciosCuadro3}>
+            <div className={styles.Description}>
+                <h1>Optimiza tu presencia en línea con nuestro análisis de mercado y estrategia digital. Aumenta leads, tráfico y conversiones mientras te destacas frente a la competencia.</h1>
+            </div>
+            <div className={styles.Bloque}>
+            <div className={styles.PreciosCuadro3}>
                 <div className={styles.Cantidades3}>
                     <p className={styles.texto}>$156</p>
                     <p className={styles.texto}>Q1,095</p>
@@ -104,6 +105,7 @@ function BloquePrecios3() {
             </div>
             <div className={styles.TituloPrecios3}>
                 <h1>DIGITAL AUDIT</h1>
+            </div>
             </div>
         </div>
     );
@@ -115,9 +117,6 @@ const Imagecomponents4 = () => {
             <div className={styles.CuartoText}>
                 <h1>MEDIA MANAGEMENT</h1>
             </div>
-            <div className={styles.Description2}>
-                <h1>Construccion de un buyer perona para una comunicacion efectiva.</h1>
-            </div>
         </div>
     );
 }
@@ -125,7 +124,11 @@ const Imagecomponents4 = () => {
 function BloquePrecios4() {
     return (
         <div className={styles.BloquePrecios4}>
-             <div className={styles.PreciosCuadro4}>
+            <div className={styles.Description2}>
+                <h1>Construccion de un buyer perona para una comunicacion efectiva.</h1>
+            </div>
+            <div className={styles.Bloque2}>
+            <div className={styles.PreciosCuadro4}>
                 <div className={styles.Cantidades4}>
                     <p className={styles.texto}>$137</p>
                     <p className={styles.texto}>Q959</p>
@@ -133,6 +136,7 @@ function BloquePrecios4() {
             </div>
             <div className={styles.TituloPrecios4}>
                 <h1>COSTUMER IDENTIFICATION</h1>
+            </div>
             </div>
         </div>
     );

@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from './carousel.module.css';
 
 const Carousel = ({ images }) => {
-  console.log(images)
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(null);
 

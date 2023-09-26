@@ -489,15 +489,13 @@
   max-width: calc(47% - 6px);
 }
 
-/* Estilos para el elemento .Final */
-.Container .Final {
-  width: 100%;
+.Final {
+  display: flex;
+  width: 420px;
   text-align: center;
-  margin-top: 8px;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente los elementos en .Final */
+  justify-content: center;
+  position: relative;
 }
-
 
   .Button {
     background-color: #C74441;
@@ -859,7 +857,7 @@
 
   .Final {
     display: flex;
-    width: 500px;
+    width: 300px;
     text-align: center;
     justify-content: center;
     position: relative;

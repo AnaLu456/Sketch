@@ -1,5 +1,4 @@
 /* components.module.css */
-
 .Header {
     background-color: #F3EEE1;
     width: 100%;
@@ -270,23 +269,6 @@
     padding: 20px; /* Agrega relleno alrededor del texto */
 }
 
-.Description {
-    color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'KoPub Batang', serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    text-align: right; /* Alinea el texto a la derecha */
-    padding-top: 100px; /* Agrega relleno alrededor del texto */
-    padding-left: 500px; /* Agrega relleno alrededor del texto */
-    padding-bottom: 220px;
-    padding-right: 15px;
-}
-
 .headerImageContainer3 {
     position: relative;
     top: auto;
@@ -306,10 +288,28 @@
     margin-bottom: 8px;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
     padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centra los objetos horizontalmente */
-    flex-direction: row-reverse; /* Coloca los objetos en línea horizontalmente */
+}
+
+.Description {
+  color: #000;
+  font-family: 'KoPub Batang';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Bloque {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los objetos horizontalmente */
+  flex-direction: row-reverse; /* Coloca los objetos en línea horizontalmente */
+  justify-content: space;
 }
 
 .PreciosCuadro3 {
@@ -382,23 +382,6 @@
     padding: 20px; /* Agrega relleno alrededor del texto */
 }
 
-.Description2 {
-    color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'KoPub Batang', serif;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    text-align: right; /* Alinea el texto a la derecha */
-    padding-top: 100px; /* Agrega relleno alrededor del texto */
-    padding-left: 500px; /* Agrega relleno alrededor del texto */
-    padding-bottom: 220px;
-    padding-right: 15px;
-}
-
 .headerImageContainer4 {
     position: relative;
     top: auto;
@@ -413,15 +396,33 @@
 }
 
 .BloquePrecios4 {
-    background-color: #F3EEE1;
-    width: 100%;
-    margin-bottom: 50px;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centra los objetos horizontalmente */
-    flex-direction: row-reverse; /* Coloca los objetos en línea horizontalmente */
+  background-color: #F3EEE1;
+  width: 100%;
+  margin-bottom: 8px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.30);
+  padding: 50px;
+}
+
+.Description2 {
+color: #000;
+font-family: 'KoPub Batang';
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.Bloque2 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra los objetos horizontalmente */
+  flex-direction: row-reverse; /* Coloca los objetos en línea horizontalmente */
+  justify-content: space;
 }
 
 .PreciosCuadro4 {
@@ -660,25 +661,31 @@
       justify-content: space-between;
     }
 
-    .BloquePrecios3 {
+    .Description {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .Bloque {
       display: flex;
       justify-content: space-evenly;
     }
 
-    .BloquePrecios4 {
+    .Description2 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .Bloque2 {
       display: flex;
       justify-content: space-between;
     }
-
-    .Description {
-      font-size: 12.5px;
-      padding-left: 100px; /* Agrega relleno alrededor del texto */
-  }
-
-  .Description2 {
-    font-size: 12.5px;
-    padding-left: 100px; /* Agrega relleno alrededor del texto */
-}
 
 .Container {
   display: flex;

@@ -12,10 +12,9 @@ import Link from 'next/link'
 function Header() {
     return (
         <div className={styles.Header}>
-            <Link target='_self' href="localhost:3000/packages/andremarco">
-                <button className={styles.botonLogo}>
-                    <Image src={img1} className={styles.logo}></Image>
-                </button>
+            <Link target='_self' href="/">
+                <Image src={img1} className={styles.logo}></Image>
+
             </Link>
         </div>
     );

@@ -1,23 +1,27 @@
 
-import { BloquePrecios1, BloquePrecios2, BloquePrecios3, Imagendiv2, Imagendiv3} from "./Componentes/div1";
-import Imagediv1 from "./Componentes/div1";
-import {Header} from "./Componentes/header";
+import { EstructuraFila } from "@/app/componentes/componentes";
+import img1 from "../company/imagenes/26.jpg"
+import img2 from "../company/imagenes/58.jpg"
+import img3 from "../company/imagenes/64.jpg"
+import { Header } from "@/app/componentes/componentes";
+import styles from "../../componentes/componentes.module.css"
 import { ContactPage } from "../outside/componentes/components";
 
 export default function Home() {
   return (
     <div>
-    
+
       <Header></Header>
-      <Imagediv1></Imagediv1>
-      <BloquePrecios1></BloquePrecios1>
-      <Imagendiv2> </Imagendiv2>
-      <BloquePrecios2></BloquePrecios2>
-      <Imagendiv3></Imagendiv3>
-      <BloquePrecios3></BloquePrecios3>
+      <EstructuraFila account={"COMPANY ACCOUNT"} imagenes={img1} texto="1 sesión del fotos al mes
+           16 post mensuales en el feed
+           12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics Client Service. " clase={styles.texto} precioD="585" precioQ="4,095" paquete="MANTAIN" />
+      <EstructuraFila account={"COMPANY ACCOUNT"} imagenes={img2} texto="2 sesión del fotos al mes, 20 post mensuales en el feed, (16 fotos y 4 reels) 20 historias mensuales + organización de highlights Pro Copyright Monthly Analytics Client Service Adds Consultancies." clase={styles.texto} precioD="978" precioQ="6,850" paquete="IDEAL" />
+
+      <EstructuraFila account={"COMPANY ACCOUNT"} imagenes={img3} texto="2 sesión del fotos al mes, 20 post mensuales en el feed, (12 fotos y 8 reels) 28 historias al mes + organización de highlights Pro Copyright Monthly Analytics Client Service Adds Consultancies." clase={styles.texto} precioD="1,170" precioQ="8,190" paquete="MANTAIN" />
+
       <ContactPage></ContactPage>
 
     </div>
-    
+
   );
 }

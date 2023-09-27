@@ -37,7 +37,7 @@ function EstructuraFila({ imagenes, texto, clase, precioD, precioQ, paquete }) {
         <div className={styles.fila}>
             <div className={styles.container}>
                 <Image src={imagenes} className={styles.img} />
-                <h1 className={styles.titulo}>PERSONAL ACCOUNT</h1>
+                <h1 className={styles.titulo}>{account}T</h1>
                 <p className={clase}>{texto}</p>
                 <div className={styles.botones}>
                     <h1 className={styles.paquete}>{paquete} PACK</h1>
@@ -55,9 +55,9 @@ function EstructuraFila({ imagenes, texto, clase, precioD, precioQ, paquete }) {
 function Filap() {
     return (
         <div>
-            <EstructuraFila imagenes={img2} texto="1 sesión de fotos al mes 4 post mensuales en el feed 8 historias mensuales organización de highlights Pro Copyright" clase={styles.texto} precioD="250" precioQ="1,755" paquete="START" />
-            <EstructuraFila imagenes={img3} texto="1 sesión de fotos al mes 8 post mensuales en el feed 12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics." clase={styles.texto} precioD="470" precioQ="2,925" paquete="GROW" />
-            <EstructuraFila imagenes={img4} texto="1 sesión de fotos al mes 8 post mensuales en el feed 12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics." clase={styles.texto3} precioD="585" precioQ="4,095" paquete="MANTAIN" />
+            <EstructuraFila imagenes={img2} texto="1 sesión de fotos al mes 4 post mensuales en el feed 8 historias mensuales organización de highlights Pro Copyright" clase={styles.texto} precioD="250" precioQ="1,755" paquete="START" account="PERSONAL ACCOUNT" />
+            <EstructuraFila imagenes={img3} texto="1 sesión de fotos al mes 8 post mensuales en el feed 12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics." clase={styles.texto} precioD="470" precioQ="2,925" paquete="GROW" account="PERSONAL ACCOUNT" />
+            <EstructuraFila imagenes={img4} texto="1 sesión de fotos al mes 8 post mensuales en el feed 12 historias mensuales Organización de highlights Pro Copyright Monthly Analytics." clase={styles.texto3} precioD="585" precioQ="4,095" paquete="MANTAIN" account="PERSONAL ACCOUNT" />
         </div>
     );
 }

@@ -11,7 +11,7 @@ import Video from "../app/componentes/video.js";
 import { Header } from "./componentes/componentes";
 import Image from "next/image";
 import img8 from "../../public/fondonosotros.jpeg";
-import { ContactPage } from "./pages/outside/componentes/components";
+import { ContactPage } from "./packages/outside/componentes/components";
 import Link from "next/link";
 
 const imagenes = [

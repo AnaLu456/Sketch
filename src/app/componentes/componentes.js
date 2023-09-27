@@ -2,17 +2,17 @@
 import React, { useState } from 'react';
 import styles from './componentes.module.css';
 import Image from 'next/image';
-import img1 from '../pages/personal/imagenes/Wave.png';
-import img2 from '../pages/personal/imagenes/80.jpg';
-import img3 from '../pages/personal/imagenes/12.jpg';
-import img4 from '../pages/personal/imagenes/23.jpg';
+import img1 from '../packages/personal/imagenes/Wave.png';
+import img2 from '../packages/personal/imagenes/80.jpg';
+import img3 from '../packages/personal/imagenes/12.jpg';
+import img4 from '../packages/personal/imagenes/23.jpg';
 import Link from 'next/link'
 
 
 function Header() {
     return (
         <div className={styles.Header}>
-            <Link target='_self' href="localhost:3000/pages/andremarco">
+            <Link target='_self' href="localhost:3000/packages/andremarco">
                 <button className={styles.botonLogo}>
                     <Image src={img1} className={styles.logo}></Image>
                 </button>
@@ -32,12 +32,12 @@ function PaletaDeColores() {
     );
 }
 
-function EstructuraFila({ imagenes, texto, clase, precioD, precioQ, paquete }) {
+function EstructuraFila({ imagenes, texto, clase, precioD, precioQ, paquete, account }) {
     return (
         <div className={styles.fila}>
             <div className={styles.container}>
                 <Image src={imagenes} className={styles.img} />
-                <h1 className={styles.titulo}>{account}T</h1>
+                <h1 className={styles.titulo}>{account}</h1>
                 <p className={clase}>{texto}</p>
                 <div className={styles.botones}>
                     <h1 className={styles.paquete}>{paquete} PACK</h1>

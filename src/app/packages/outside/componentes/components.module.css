@@ -27,7 +27,8 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 400px;
+
 }
 
   .Button {
@@ -110,6 +111,11 @@
     border-radius: 0px;
     padding: 10px 40px;
     margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .Main1 {
+    margin-left: 55px;
   }
 
   .Contacto {

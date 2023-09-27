@@ -12,7 +12,7 @@ function ContactPage() {
     return (
         <div className={styles.Container}>
             <div className={styles.LeftSide}>
-                <main className={styles.Main}>
+                <main className={styles.Main1}>
                     <div className={styles.Logo} paginaweb={styles.Logo}>
                         <Image className={styles.LogoImg}  src={Wave} alt="Logo" />
                     </div>
@@ -55,8 +55,9 @@ function ContactPage() {
                 </main>
                 
             </div>
+            <p className={styles.Final}>@ 2023 WAVE</p>
             <div className={styles.RightSide}>
-                <main className={styles.Main}>
+                <main className={styles.Main2}>
                     <div className={styles.wrapper}>
                         
                         <form className={styles.Form} method="POST" action="https://formspree.io/f/moqokldg">
@@ -76,7 +77,6 @@ function ContactPage() {
                             <button className={styles.button} type="submit">ENVIAR</button>
                         </form>
                     </div>
-                    <p className={styles.Final}>@ 2023 WAVE</p>
                 </main>
             </div>
         </div>

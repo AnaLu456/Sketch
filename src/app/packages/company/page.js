@@ -2,7 +2,7 @@
 import { BloquePrecios1, BloquePrecios2, BloquePrecios3, Imagendiv2, Imagendiv3} from "./Componentes/div1";
 import Imagediv1 from "./Componentes/div1";
 import {Header} from "./Componentes/header";
-
+import { ContactPage } from "../outside/componentes/components";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <BloquePrecios2></BloquePrecios2>
       <Imagendiv3></Imagendiv3>
       <BloquePrecios3></BloquePrecios3>
+      <ContactPage></ContactPage>
 
     </div>
     

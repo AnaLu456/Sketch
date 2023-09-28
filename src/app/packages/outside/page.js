@@ -7,13 +7,14 @@ import styles from "../../componentes/componentes.module.css";
 import { Header } from "@/app/componentes/componentes";
 import { EstructuraFila } from "@/app/componentes/componentes";
 import {ContactPage} from "./componentes/components";
+import { Precios3x2 } from "@/app/componentes/componentes";
 
 export default function Home() {
   return (
     <div>
       <Header></Header>
       <EstructuraFila imagenes={img1} precioD="250" precioQ="1,755" paquete="SESION DE FOTOS" account="FOTOGRAFÍA" />
-      <EstructuraFila imagenes={img2} precioD="1x50" precioQ="1x350" paquete="VIDEO" account="VIDEOGRAFÍA" />
+      <Precios3x2 imagenes={img2} account="VIDEOGRAFÍA"></Precios3x2>
       <EstructuraFila imagenes={img3} texto="Optimiza tu presencia en línea con nuestro análisis de mercado y estrategia digital. Aumenta leads, tráfico y conversiones mientras te destacas frente a la competencia." clase={styles.texto} precioD="156" precioQ="1,095" paquete="DIGITAL AUDIT" account="MEDIA MANAGEMENT" />
       <EstructuraFila imagenes={img4} texto="Construccion de un buyer perona para una comunicacion efectiva" clase={styles.texto} precioD="137" precioQ="959" paquete="COSTUMER IDENTIFICATION" account="MEDIA MANAGEMENT" />
       <ContactPage></ContactPage>

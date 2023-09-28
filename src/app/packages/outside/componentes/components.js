@@ -55,29 +55,33 @@ function ContactPage() {
                 </main>
                 
             </div>
-            <p className={styles.Final}>@ 2023 WAVE</p>
-            <div className={styles.RightSide}>
-                <main className={styles.Main2}>
-                    <div className={styles.wrapper}>
+            <p className={styles.Final2}>@ 2023 WAVE</p>
+            <div className={styles.ordenar}>
+                <p className={styles.Final}>@ 2023 WAVE</p>
+                <div className={styles.RightSide}>
+                    <main className={styles.Main2}>
+                        <h1 className={styles.Contacto1}>Contact Us</h1>
+                        <div className={styles.wrapper}>
                         
-                        <form className={styles.Form} method="POST" action="https://formspree.io/f/moqokldg">
-                            <h1 className={styles.Contacto}>Contact Us</h1>
-                            <div className={styles.Caja}>
-                                <input name="text" type="text" id="Nombre" placeholder="Nombre:" required></input>
-                                <i className={styles.bxCaja1}></i>
-                            </div>
-                            <div className={styles.Caja}>
-                                <input name="email" type="email" id="Email" placeholder="Email:" required></input>
-                                <i className={styles.bxCaja2}></i>
-                            </div>
-                            <div className={styles.Caja}>
-                                <input name="mensaje" id="Mensaje" placeholder="Mensaje:" required></input>
-                                <i className={styles.bxCaja3}></i>
-                            </div>
-                            <button className={styles.button} type="submit">ENVIAR</button>
-                        </form>
-                    </div>
-                </main>
+                            <form className={styles.Form} method="POST" action="https://formspree.io/f/moqokldg">
+                                <h1 className={styles.Contacto}>Contact Us</h1>
+                                <div className={styles.Caja}>
+                                    <input name="text" type="text" id="Nombre" placeholder="Nombre:" required></input>
+                                    <i className={styles.bxCaja1}></i>
+                                </div>
+                                <div className={styles.Caja}>
+                                    <input name="email" type="email" id="Email" placeholder="Email:" required></input>
+                                    <i className={styles.bxCaja2}></i>
+                                </div>
+                                <div className={styles.Caja}>
+                                    <input name="mensaje" id="Mensaje" placeholder="Mensaje:" required></input>
+                                    <i className={styles.bxCaja3}></i>
+                                </div>
+                                <button className={styles.button} type="submit">ENVIAR</button>
+                            </form>
+                        </div>
+                    </main>
+                </div>
             </div>
         </div>
     );

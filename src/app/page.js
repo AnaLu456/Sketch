@@ -12,6 +12,7 @@ import { Header } from "./componentes/componentes";
 import Image from "next/image";
 import img8 from "../../public/fondonosotros.jpeg";
 import { ContactPage } from "./packages/outside/componentes/components";
+import { Precios3x2 } from "./componentes/componentes";
 import Link from "next/link";
 
 const imagenes = [

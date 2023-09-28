@@ -9,6 +9,27 @@ import img4 from '../packages/personal/imagenes/23.jpg';
 import Link from 'next/link'
 
 
+function Precios3x2(){
+    return(
+        <div className={styles.precios1}>
+            <h1 className={styles.preciostitulo}>Video Pack</h1>
+            <div className={styles.izquierda}>
+                <p className={styles.precioQue}>1xQ350</p>
+                <p className={styles.precioQue}>2xQ600</p>
+                <p className={styles.precioQue}>4xQ2,000</p>
+            </div>
+            <div className={styles.izquierda}>
+                <p className={styles.precioDol}>1x$50</p>
+                <p className={styles.precioDol}>2x$86</p>
+                <p className={styles.precioDol}>4x$286</p>
+            </div>  
+        </div>
+
+
+    )
+}
+
+
 function Header() {
     return (
         <div className={styles.Header}>
@@ -63,4 +84,4 @@ function Filap() {
 
 
 
-export { Header, PaletaDeColores, Filap, EstructuraFila };
+export { Header, PaletaDeColores, Filap, EstructuraFila, Precios3x2 };
